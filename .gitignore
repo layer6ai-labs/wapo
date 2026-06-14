@@ -1,0 +1,49 @@
+# env 
+.venv/
+venv/
+env/
+uv.lock
+.env
+.env.local
+.claude/
+.cursorrules
+.cursor/
+.ropeproject/
+.scratch/
+.chroma_db/
+
+# artifacts
+core.* 
+.coverage
+dist/
+build/
+_build/
+docs/build/
+*.egg-info/
+*/__pycache__/
+*/*/__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.pyo
+*.pyd
+*.pyc
+
+# libraries
+prime-rl/
+
+# outputs
+wandb/
+/outputs/
+**/outputs/
+paper/
+reports/
+logs/
+.chroma_db/
+
+# development
+local/
+scratch/
+.idea/
+.vscode/
+*.swp
+.DS_Store

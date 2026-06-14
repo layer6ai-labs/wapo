@@ -1,0 +1,32 @@
+# model = "/home/zhichen/models/willcb/Qwen3-4B"
+model = "/home/zhichen/models/sft/qwen3-4B-format-sft-50"
+
+[env]
+id = "gsm8k"
+
+[inference]
+gpus = 1
+
+[inference.args]
+enforce_eager = true
+
+[trainer]
+gpus = 1
+
+[trainer.args]
+run_name = "gsm8k-sft-bf16-qwen4b"
+use_lora = true
+lora_target_modules = "all-linear"
+learning_rate = 1e-5
+micro_batch_size = 1
+rollouts_per_example = 4
+batch_size = 256
+max_steps = 1600
+max_tokens = 1024
+max_seq_len = 8192
+max_grad_norm = 0.01
+gradient_checkpointing = true
+generation_timeout = 2400
+output_dir = "/home/zhichen/rl_logs/checkpoints/gsm8k-sft-bf16-qwen4b"
+lr_scheduler_type = "constant"
+warmup_steps = 10

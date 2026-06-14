@@ -1,0 +1,206 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "verifiers"
+authors = [
+    {name = "William Brown", email = "williambrown97@gmail.com"},
+]
+dynamic = ["version"]  # load from verifiers/__init__.py
+description = "Verifiers: Environments for LLM Reinforcement Learning"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10,<3.14"
+keywords = ["reinforcement-learning", "llm", "rl", "grpo", "environments", "multi-turn", "agents", "agentic-rl", "tool-use", "train", "eval", "harness", "verifiers", "rlvr"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = [
+    "datasets==4.8.2",
+    "jinja2>=3.1.6",
+    "openai>=1.108.1",
+    "openai-agents>=0.0.7",
+    "nest-asyncio>=1.6.0", # for jupyter notebooks
+    "requests",
+    "rich",
+    "textual",
+    "pydantic>=2.11.9",
+    "tomli; python_version < '3.11'",
+    "prime-sandboxes>=0.2.2",
+    "wget>=3.2",
+    "liger-kernel==0.7.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff",
+    "pre-commit",
+    "ty>=0.0.1a18",
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.0.0",
+    "ipykernel",
+    "ipywidgets",
+    "reasoning-gym",
+    "textarena",
+    "nltk",
+    "math-verify>=0.8.0",
+]
+
+[project.optional-dependencies]
+rl = [
+    "torch==2.8.0",
+    "transformers==4.57.1",
+    "accelerate>=1.4.0",
+    "requests",
+    "peft",
+    "wandb",
+    "trl>=0.17.0",
+    "vllm==0.11.0",
+    "liger-kernel>=0.5.10",
+    "deepspeed>=0.17.6",
+    "flash-attn==2.8.3",
+]
+envs = [
+    "math-verify>=0.8.0",
+    "duckduckgo-search",
+    "brave-search",
+    "reasoning-gym",
+    "nltk",
+    "textarena",
+]
+all = [
+    "torch==2.8.0",
+    "transformers",
+    "accelerate>=1.4.0",
+    "requests",
+    "peft",
+    "wandb",
+    "vllm==0.11.0",
+    "liger-kernel>=0.5.10",
+    "deepspeed",
+    "math-verify>=0.8.0",
+    "duckduckgo-search",
+    "brave-search",
+    "nltk",
+    "textarena",
+]
+docs = [
+    "sphinx",
+    "myst-parser",
+    "furo"
+]
+
+[tool.uv.extra-build-dependencies]
+flash-attn = [{ requirement = "torch", match-runtime = true }]
+
+[tool.uv.extra-build-variables]
+flash-attn = { FLASH_ATTENTION_SKIP_CUDA_BUILD = "TRUE" }
+
+[project.scripts]
+vf-eval = "verifiers.scripts.eval:main"
+vf-init = "verifiers.scripts.init:main"
+vf-install = "verifiers.scripts.install:main"
+vf-setup = "verifiers.scripts.setup:main"
+vf-rl = "verifiers.scripts.rl:main"
+vf-train = "verifiers.scripts.train:main"
+vf-tui = "verifiers.scripts.tui:main"
+vf-vllm = "verifiers.rl.inference.server:main"
+prime-rl = "verifiers.scripts.prime_rl:main"
+
+# hatchling configuration
+[tool.hatch.version]
+path = "verifiers/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/verifiers",
+    "/tests",
+    "/README.md",
+    "/LICENSE",
+]
+exclude = [
+    "/wandb",
+    "/scratch",
+    "/configs",
+    "/environments",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["verifiers"]
+
+
+[project.urls]
+Homepage = "https://github.com/primeintellect-ai/verifiers"
+Documentation = "https://github.com/primeintellect-ai/verifiers"
+Repository = "https://github.com/primeintellect-ai/verifiers.git"
+Issues = "https://github.com/primeintellect-ai/verifiers/issues"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "--strict-markers",
+    "--tb=short",
+    "-ra",
+    "--quiet",
+]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks tests as integration tests",
+    "unit: marks tests as unit tests",
+    "asyncio: marks tests as async tests",
+    "parsers: marks tests for parser components",
+    "rubrics: marks tests for rubric components",
+    "environments: marks tests for environment components",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::PendingDeprecationWarning",
+    "ignore::UserWarning:transformers.*",
+    "ignore:The 'repr' attribute.*:UserWarning:pydantic.*",
+    "ignore:The 'frozen' attribute.*:UserWarning:pydantic.*",
+]
+asyncio_mode = "auto"
+norecursedirs = [".git", ".tox", "dist", "build", "*.egg", "__pycache__"]
+
+[tool.ty.rules]
+unresolved-import = "warn"
+unknown-argument = "warn"
+
+[tool.ty.src]
+exclude = ["environments"]
+
+[tool.coverage.run]
+source = ["verifiers"]
+omit = [
+    "*/tests/*",
+    "*/__pycache__/*",
+    "*/site-packages/*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+]

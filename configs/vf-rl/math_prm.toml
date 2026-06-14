@@ -1,0 +1,48 @@
+model = "Qwen/Qwen2.5-Math-1.5B-Instruct"
+
+[env]
+id = "math_prm"
+
+[env.args]
+train_path = "data/math_splits/train.jsonl"
+test_path = "data/math_splits/test.jsonl"
+model = "Qwen/Qwen2.5-Math-1.5B-Instruct"
+
+[inference]
+gpus = 1
+
+[inference.args]
+enforce_eager = true
+
+[trainer]
+gpus = 1
+
+[trainer.args]
+loss_type = "wapo"
+clip_eps = 9.0
+
+use_lora = true
+lora_target_modules = "all-linear"
+learning_rate = 1e-5
+
+micro_batch_size = 2
+rollouts_per_example = 8
+mini_batch_size = 64
+batch_size = 256
+
+max_steps = 500
+max_tokens = 2048
+max_seq_len = 4096
+max_grad_norm = 1.0
+gradient_checkpointing = true
+generation_timeout = 1200
+
+lr_scheduler_type = "constant"
+warmup_steps = 10
+
+save_strategy = "steps"
+save_steps = 50
+resume_from_checkpoint = "auto"
+
+run_name = "math-prm"
+output_dir = "./checkpoints/math-prm"

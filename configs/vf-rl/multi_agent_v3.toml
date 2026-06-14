@@ -1,0 +1,74 @@
+# Multi-Agent RL Training Configuration - v3
+#
+# CHANGES from multi_agent.toml:
+#   - Num turns reduced to 5.
+#
+# Multi-Agent RL Training Configuration
+#
+# Usage:
+#   1. Install the environment: pip install -e environments/multi_agent
+#   2. Start retriever server: python search_r1/search/retrieval_server.py --port 8000
+#   3. Start answer agent LLM: vllm serve Qwen/Qwen3-8B --port 8001
+#   4. Run training: vf-rl @ configs/vf-rl/multi_agent.toml
+
+# Planning agent model (this model gets trained)
+model = "Qwen/Qwen2.5-1.5B-Instruct"
+
+[env]
+id = "multi_agent"
+
+[env.args]
+# Retriever configuration
+retriever_url = "http://192.168.4.147:8080/retrieve"
+top_k = 3
+
+# Answer agent configuration (external LLM, not trained)
+answer_agent_url = "http://192.168.4.128:8080/v1"
+answer_agent_model = "Qwen/Qwen3-8B"
+answer_agent_api_key = "EMPTY"
+
+# Dataset configuration (same as vf_rag_agent)
+train_dataset_path = "/home/zhichen/ott-qa/mix-10000-v1.json"
+eval_dataset_path = "/home/zhichen/ott-qa/ott-eval.json"
+num_train_examples = -1
+num_eval_examples = 100
+
+# Multi-agent settings
+max_turns = 5
+
+[inference]
+gpus = 1
+
+[inference.args]
+enforce_eager = true
+tensor_parallel_size = 1
+
+[trainer]
+gpus = 1
+
+[trainer.args]
+# Batch configuration (same as ott_rl.toml)
+batch_size = 256
+micro_batch_size = 1
+rollouts_per_example = 4
+
+# Training configuration (same as ott_rl.toml)
+max_steps = 1600
+learning_rate = 1e-5
+max_grad_norm = 0.01
+gradient_checkpointing = true
+generation_timeout = 2400
+lr_scheduler_type = "constant"
+warmup_steps = 10
+
+# LoRA configuration
+use_lora = true
+lora_target_modules = "all-linear"
+
+# Sequence length (same as ott_rl.toml)
+max_tokens = 1024
+max_seq_len = 8192
+
+# Logging
+run_name = "multi-agent-v3"
+output_dir = "/home/zhichen/rl_logs/checkpoints/multi-agent-v3"

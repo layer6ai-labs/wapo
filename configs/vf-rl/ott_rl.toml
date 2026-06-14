@@ -1,0 +1,38 @@
+# model = "/home/zhichen/models/willcb/Qwen3-4B"
+model = "/home/zhichen/models/sft/qwen3-4B-format-sft-50"
+
+[env]
+id = "vf-rag-agent" # auto-installed from hub if given as user/env-id, or from local project if given as env-id
+
+[env.args]
+train_dataset_path = "/home/zhichen/ott-qa/mix-10000-v1.json"
+eval_dataset_path = "/home/zhichen/ott-qa/ott-eval.json"
+ans_agent_url = "http://192.168.4.128:8000/v1/chat/completions"
+retrieve_url = "http://192.168.4.147:8080/retrieve"
+
+[inference]
+gpus = 1
+
+[inference.args]
+enforce_eager = true
+
+[trainer]
+gpus = 1
+
+[trainer.args]
+run_name = "ott-sft-turn-bf16-qwen4b-seqir"
+use_lora = true
+lora_target_modules = "all-linear"
+learning_rate = 1e-5
+micro_batch_size = 1
+rollouts_per_example = 4
+batch_size = 256
+max_steps = 1600
+max_tokens = 1024
+max_seq_len = 8192
+max_grad_norm = 0.01
+gradient_checkpointing = true
+generation_timeout = 2400
+output_dir = "/home/zhichen/rl_logs/checkpoints/ott-sft-turn-bf16-qwen4b-seqir"
+lr_scheduler_type = "constant"
+warmup_steps = 10
