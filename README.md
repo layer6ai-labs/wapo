@@ -1,4 +1,16 @@
-# Verifiers (fork)
+<p align="center">
+<a href="https://layer6.ai/"><img src="https://github.com/layer6ai-labs/DropoutNet/blob/master/logs/logobox.jpg" width="180"></a>
+</p>
+
+# Winner Advantage Policy Optimization
+
+<div align="center">
+
+[![arxiv](https://img.shields.io/static/v1?label=arXiv&message=2606.16154&color=B31B1B&logo=arXiv)](https://arxiv.org/abs/2606.16154)
+
+</div>
+
+## Verifiers (fork)
 
 This is a fork of [PrimeIntellect-ai/verifiers](https://github.com/PrimeIntellect-ai/verifiers) extending `vf.RLTrainer` with research loss functions. See the original repo for installation, environment documentation, and general usage.
 
@@ -201,7 +213,19 @@ data/
 
 The example configs in `configs/vf-rl/` already reference these paths under `data/`. Update `[env.args]` in each config if you place the data elsewhere.
 
-## References
+## Citing
 
-- Original repo: [PrimeIntellect-ai/verifiers](https://github.com/PrimeIntellect-ai/verifiers)
-- Original author: Will Brown ([@willccbb](https://github.com/willccbb))
+If you use any part of this repository in your research, please cite the associated paper with the following bibtex entry:
+
+```
+@article{yss2026wapo,
+  title={A Gradient Perspective on RLVR Stability and Winner Advantage Policy Optimization},
+  author={Prasanth YSS and Zhichen Ren and Rasa Hosseinzadeh and Ilan Gofman and Yuqi Chen and Zhaoyan Liu and Guangwei Yu and Jesse C. Cresswell and Satya Krishna Gorti},
+  journal={arXiv:2606.16154},
+  year={2024}
+}
+```
+
+## License
+
+This data and code is licensed under the MIT License, copyright by Layer 6 AI.
