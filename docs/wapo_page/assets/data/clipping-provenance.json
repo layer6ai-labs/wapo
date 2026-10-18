@@ -1,0 +1,62 @@
+[
+  {
+    "run_id": "2uir7dzw",
+    "name": "ott-gemma-sft50-256-64-8-dr_dapo-10-0.8-new-fmt",
+    "wandb_url": "https://forge.coreweave.com/wandb/yssprashanth65536-student/huggingface/runs/2uir7dzw",
+    "source": "wandb/ott-gemma-sft50-256-64-8-dr_dapo-10-0.8-new-fmt/run-2uir7dzw.wandb",
+    "csv_source": "EMNLP_2026/wapo_paper/plots/data/ott_gemma_drdapo_10_0_8.csv",
+    "export": "assets/data/paper/ott_gemma_drdapo_10_0_8.csv",
+    "verified_rows": 825,
+    "config": {
+      "loss_type": "dr_dapo",
+      "clip_eps": null,
+      "mask_ratio_low": 0.8,
+      "mask_ratio_high": 10.0
+    }
+  },
+  {
+    "run_id": "8deer41o",
+    "name": "ott-gemma-sft50-256-64-8-dr_dapo_10-0.1-new-fmt",
+    "wandb_url": "https://forge.coreweave.com/wandb/yssprashanth65536-student/huggingface/runs/8deer41o",
+    "source": "wandb/ott-gemma-sft50-256-64-8-dr_dapo_10-0.1-new-fmt/run-8deer41o.wandb",
+    "csv_source": "EMNLP_2026/wapo_paper/plots/data/ott_gemma_drdapo_10_0_1.csv",
+    "export": "assets/data/paper/ott_gemma_drdapo_10_0_1.csv",
+    "verified_rows": 843,
+    "config": {
+      "loss_type": "dr_dapo",
+      "clip_eps": null,
+      "mask_ratio_low": 0.1,
+      "mask_ratio_high": 10.0
+    }
+  },
+  {
+    "run_id": "bxi7adqn",
+    "name": "ott-qwen4b-sft50-256-64-8-grpo-eps-0.2-new-fmt",
+    "wandb_url": "https://forge.coreweave.com/wandb/yssprashanth65536-student/huggingface/runs/bxi7adqn",
+    "source": "wandb/ott-qwen4b-sft50-256-64-8-grpo-eps-0.2-new-fmt/run-bxi7adqn.wandb",
+    "csv_source": "EMNLP_2026/wapo_paper/plots/data/ott_qwen_grpo_eps_0_2.csv",
+    "export": "assets/data/paper/ott_qwen_grpo_eps_0_2.csv",
+    "verified_rows": 1600,
+    "config": {
+      "loss_type": "grpo",
+      "clip_eps": 0.2,
+      "mask_ratio_low": 0.8,
+      "mask_ratio_high": 1.2
+    }
+  },
+  {
+    "run_id": "2146seq9",
+    "name": "ott-qwen4b-sft50-256-64-8-grpo-eps-9.0-new-fmt",
+    "wandb_url": "https://forge.coreweave.com/wandb/yssprashanth65536-student/huggingface/runs/2146seq9",
+    "source": "wandb/ott-qwen4b-sft50-256-64-8-grpo-eps-9.0-new-fmt/run-2146seq9.wandb",
+    "csv_source": "EMNLP_2026/wapo_paper/plots/data/ott_qwen_grpo_eps_9_0.csv",
+    "export": "assets/data/paper/ott_qwen_grpo_eps_9_0.csv",
+    "verified_rows": 659,
+    "config": {
+      "loss_type": "grpo",
+      "clip_eps": 9.0,
+      "mask_ratio_low": 0.8,
+      "mask_ratio_high": 1.2
+    }
+  }
+]

@@ -1,0 +1,3355 @@
+{
+  "source_plot": "neurips_2026/rlvr_entropy_control_overleaf/plots/entropy-filtering-reward-entropy/plot.tex",
+  "source_pdf": "neurips_2026/131_Diagnosing_and_Stabilizing.pdf",
+  "source_figure": 2,
+  "panels": [
+    {
+      "model": "Qwen3-4B",
+      "dataset": "OTT-QA",
+      "objective": "DAPO",
+      "tau_plus": 0.1,
+      "tau_minus": -0.1,
+      "displayed_steps": [
+        0,
+        400
+      ],
+      "series": {
+        "baseline": {
+          "run_id": "s7veiho6",
+          "source_csv": "neurips_2026/rlvr_entropy_control_overleaf/plots/entropy-filtering-reward-entropy/data/ott-qwen-baseline.csv",
+          "source_sha256": "1866a1f2693a2a15a1dcee38f27f0e2803bf86ed284e74c2ae5c9c391f28b44e",
+          "values": [
+            {
+              "gradient_step": 0.0,
+              "reward": 0.39237403869628906,
+              "entropy": 1.0646939277648926
+            },
+            {
+              "gradient_step": 4.0,
+              "reward": 0.324951708316803,
+              "entropy": 1.0748627185821533
+            },
+            {
+              "gradient_step": 8.0,
+              "reward": 0.31225043535232544,
+              "entropy": 1.0134832859039307
+            },
+            {
+              "gradient_step": 12.0,
+              "reward": 0.360850989818573,
+              "entropy": 1.0117981433868408
+            },
+            {
+              "gradient_step": 16.0,
+              "reward": 0.37569576501846313,
+              "entropy": 1.0797605514526367
+            },
+            {
+              "gradient_step": 20.0,
+              "reward": 0.3208302855491638,
+              "entropy": 1.061600923538208
+            },
+            {
+              "gradient_step": 24.0,
+              "reward": 0.31561279296875,
+              "entropy": 1.0998823642730713
+            },
+            {
+              "gradient_step": 28.0,
+              "reward": 0.3176659941673279,
+              "entropy": 1.0584146976470947
+            },
+            {
+              "gradient_step": 32.0,
+              "reward": 0.36387938261032104,
+              "entropy": 1.0486249923706055
+            },
+            {
+              "gradient_step": 36.0,
+              "reward": 0.32862117886543274,
+              "entropy": 1.0878605842590332
+            },
+            {
+              "gradient_step": 40.0,
+              "reward": 0.3604326546192169,
+              "entropy": 1.1025452613830566
+            },
+            {
+              "gradient_step": 44.0,
+              "reward": 0.3447258472442627,
+              "entropy": 1.0792468786239624
+            },
+            {
+              "gradient_step": 48.0,
+              "reward": 0.32294178009033203,
+              "entropy": 1.1081680059432983
+            },
+            {
+              "gradient_step": 52.0,
+              "reward": 0.4208225607872009,
+              "entropy": 1.0546371936798096
+            },
+            {
+              "gradient_step": 56.0,
+              "reward": 0.41259127855300903,
+              "entropy": 1.0702075958251953
+            },
+            {
+              "gradient_step": 60.0,
+              "reward": 0.3699291944503784,
+              "entropy": 1.1333566904067993
+            },
+            {
+              "gradient_step": 64.0,
+              "reward": 0.35387223958969116,
+              "entropy": 1.1090805530548096
+            },
+            {
+              "gradient_step": 68.0,
+              "reward": 0.3837715685367584,
+              "entropy": 1.1105921268463135
+            },
+            {
+              "gradient_step": 72.0,
+              "reward": 0.3690429627895355,
+              "entropy": 1.0884196758270264
+            },
+            {
+              "gradient_step": 76.0,
+              "reward": 0.3363030254840851,
+              "entropy": 1.2020527124404907
+            },
+            {
+              "gradient_step": 80.0,
+              "reward": 0.40160244703292847,
+              "entropy": 1.1279397010803223
+            },
+            {
+              "gradient_step": 84.0,
+              "reward": 0.41415494680404663,
+              "entropy": 1.1751799583435059
+            },
+            {
+              "gradient_step": 88.0,
+              "reward": 0.3700183629989624,
+              "entropy": 1.2220814228057861
+            },
+            {
+              "gradient_step": 92.0,
+              "reward": 0.3845828175544739,
+              "entropy": 1.253342628479004
+            },
+            {
+              "gradient_step": 96.0,
+              "reward": 0.369049608707428,
+              "entropy": 1.24257493019104
+            },
+            {
+              "gradient_step": 100.0,
+              "reward": 0.4186912775039673,
+              "entropy": 1.2571489810943604
+            },
+            {
+              "gradient_step": 104.0,
+              "reward": 0.4188328981399536,
+              "entropy": 1.2203824520111084
+            },
+            {
+              "gradient_step": 108.0,
+              "reward": 0.4373495578765869,
+              "entropy": 1.382109522819519
+            },
+            {
+              "gradient_step": 112.0,
+              "reward": 0.4915763735771179,
+              "entropy": 1.304909110069275
+            },
+            {
+              "gradient_step": 116.0,
+              "reward": 0.4013465642929077,
+              "entropy": 1.5067919492721558
+            },
+            {
+              "gradient_step": 120.0,
+              "reward": 0.433180570602417,
+              "entropy": 1.610403060913086
+            },
+            {
+              "gradient_step": 124.0,
+              "reward": 0.4364354610443115,
+              "entropy": 1.8289361000061035
+            },
+            {
+              "gradient_step": 128.0,
+              "reward": 0.41600579023361206,
+              "entropy": 1.9068564176559448
+            },
+            {
+              "gradient_step": 132.0,
+              "reward": 0.43496811389923096,
+              "entropy": 2.131917715072632
+            },
+            {
+              "gradient_step": 136.0,
+              "reward": 0.40601229667663574,
+              "entropy": 2.3882699012756348
+            },
+            {
+              "gradient_step": 140.0,
+              "reward": 0.4575001895427704,
+              "entropy": 2.9185516834259033
+            },
+            {
+              "gradient_step": 144.0,
+              "reward": 0.4111274182796478,
+              "entropy": 3.707207202911377
+            },
+            {
+              "gradient_step": 148.0,
+              "reward": 0.37590959668159485,
+              "entropy": 4.291808605194092
+            },
+            {
+              "gradient_step": 152.0,
+              "reward": 0.34778136014938354,
+              "entropy": 4.9731950759887695
+            },
+            {
+              "gradient_step": 156.0,
+              "reward": 0.35965150594711304,
+              "entropy": 4.981886863708496
+            },
+            {
+              "gradient_step": 160.0,
+              "reward": 0.3917320966720581,
+              "entropy": 5.323563575744629
+            },
+            {
+              "gradient_step": 164.0,
+              "reward": 0.33300352096557617,
+              "entropy": 5.212982654571533
+            },
+            {
+              "gradient_step": 168.0,
+              "reward": 0.3357049822807312,
+              "entropy": 5.490886211395264
+            },
+            {
+              "gradient_step": 172.0,
+              "reward": 0.3538561463356018,
+              "entropy": 5.938361644744873
+            },
+            {
+              "gradient_step": 176.0,
+              "reward": 0.2987273037433624,
+              "entropy": 6.396222114562988
+            },
+            {
+              "gradient_step": 180.0,
+              "reward": 0.2544642686843872,
+              "entropy": 7.896482944488525
+            },
+            {
+              "gradient_step": 184.0,
+              "reward": 0.22461262345314026,
+              "entropy": 8.561240196228027
+            },
+            {
+              "gradient_step": 188.0,
+              "reward": 0.09611807018518448,
+              "entropy": 9.614767074584961
+            },
+            {
+              "gradient_step": 192.0,
+              "reward": 0.05714142695069313,
+              "entropy": 9.991504669189453
+            },
+            {
+              "gradient_step": 196.0,
+              "reward": 0.012469951994717121,
+              "entropy": 10.935553550720215
+            },
+            {
+              "gradient_step": 200.0,
+              "reward": 0.015474759042263031,
+              "entropy": 11.064399719238281
+            },
+            {
+              "gradient_step": 204.0,
+              "reward": 0.018479567021131516,
+              "entropy": 11.083775520324707
+            },
+            {
+              "gradient_step": 208.0,
+              "reward": 0.01857972890138626,
+              "entropy": 10.968355178833008
+            },
+            {
+              "gradient_step": 212.0,
+              "reward": 0.0049579329788684845,
+              "entropy": 10.696929931640625
+            },
+            {
+              "gradient_step": 216.0,
+              "reward": 0.007061298470944166,
+              "entropy": 10.875434875488281
+            },
+            {
+              "gradient_step": 220.0,
+              "reward": 0.0049579329788684845,
+              "entropy": 11.253277778625488
+            },
+            {
+              "gradient_step": 224.0,
+              "reward": 0.013822115957736969,
+              "entropy": 11.249724388122559
+            },
+            {
+              "gradient_step": 228.0,
+              "reward": 0.029847757890820503,
+              "entropy": 11.098164558410645
+            },
+            {
+              "gradient_step": 232.0,
+              "reward": 0.05976228415966034,
+              "entropy": 10.900537490844727
+            },
+            {
+              "gradient_step": 236.0,
+              "reward": 0.08394145220518112,
+              "entropy": 10.93303394317627
+            },
+            {
+              "gradient_step": 240.0,
+              "reward": 0.08536515384912491,
+              "entropy": 11.158378601074219
+            },
+            {
+              "gradient_step": 244.0,
+              "reward": 0.06039663776755333,
+              "entropy": 11.174510955810547
+            },
+            {
+              "gradient_step": 248.0,
+              "reward": 0.029246794059872627,
+              "entropy": 10.073269844055176
+            },
+            {
+              "gradient_step": 252.0,
+              "reward": 0.0657552033662796,
+              "entropy": 10.322065353393555
+            },
+            {
+              "gradient_step": 256.0,
+              "reward": 0.21043668687343597,
+              "entropy": 8.518119812011719
+            },
+            {
+              "gradient_step": 260.0,
+              "reward": 0.22498378157615662,
+              "entropy": 10.464681625366211
+            },
+            {
+              "gradient_step": 264.0,
+              "reward": 0.020132210105657578,
+              "entropy": 11.444096565246582
+            },
+            {
+              "gradient_step": 268.0,
+              "reward": 0.0,
+              "entropy": 11.59316349029541
+            },
+            {
+              "gradient_step": 272.0,
+              "reward": 0.0,
+              "entropy": 11.615802764892578
+            },
+            {
+              "gradient_step": 276.0,
+              "reward": 0.0,
+              "entropy": 11.636307716369629
+            },
+            {
+              "gradient_step": 280.0,
+              "reward": 0.0,
+              "entropy": 11.641395568847656
+            },
+            {
+              "gradient_step": 284.0,
+              "reward": 0.0,
+              "entropy": 11.643084526062012
+            },
+            {
+              "gradient_step": 288.0,
+              "reward": 0.0,
+              "entropy": 11.648550987243652
+            },
+            {
+              "gradient_step": 292.0,
+              "reward": 0.0,
+              "entropy": 11.651263236999512
+            },
+            {
+              "gradient_step": 296.0,
+              "reward": 0.0,
+              "entropy": 11.642745018005371
+            },
+            {
+              "gradient_step": 300.0,
+              "reward": 0.0,
+              "entropy": 11.650115966796875
+            },
+            {
+              "gradient_step": 304.0,
+              "reward": 0.0,
+              "entropy": 11.644978523254395
+            },
+            {
+              "gradient_step": 308.0,
+              "reward": 0.0,
+              "entropy": 11.647843360900879
+            },
+            {
+              "gradient_step": 312.0,
+              "reward": 0.0,
+              "entropy": 11.653264999389648
+            },
+            {
+              "gradient_step": 316.0,
+              "reward": 0.0,
+              "entropy": 11.650788307189941
+            },
+            {
+              "gradient_step": 320.0,
+              "reward": 0.0,
+              "entropy": 11.642657279968262
+            },
+            {
+              "gradient_step": 324.0,
+              "reward": 0.0,
+              "entropy": 11.652680397033691
+            },
+            {
+              "gradient_step": 328.0,
+              "reward": 0.0,
+              "entropy": 11.652337074279785
+            },
+            {
+              "gradient_step": 332.0,
+              "reward": 0.0,
+              "entropy": 11.645261764526367
+            },
+            {
+              "gradient_step": 336.0,
+              "reward": 0.0,
+              "entropy": 11.641939163208008
+            },
+            {
+              "gradient_step": 340.0,
+              "reward": 0.0,
+              "entropy": 11.655651092529297
+            },
+            {
+              "gradient_step": 344.0,
+              "reward": 0.0,
+              "entropy": 11.636581420898438
+            },
+            {
+              "gradient_step": 348.0,
+              "reward": 0.0,
+              "entropy": 11.6435546875
+            },
+            {
+              "gradient_step": 352.0,
+              "reward": 0.0,
+              "entropy": 11.65064811706543
+            },
+            {
+              "gradient_step": 356.0,
+              "reward": 0.0,
+              "entropy": 11.648225784301758
+            },
+            {
+              "gradient_step": 360.0,
+              "reward": 0.0,
+              "entropy": 11.644238471984863
+            },
+            {
+              "gradient_step": 364.0,
+              "reward": 0.0,
+              "entropy": 11.65507984161377
+            },
+            {
+              "gradient_step": 368.0,
+              "reward": 0.0,
+              "entropy": 11.650754928588867
+            },
+            {
+              "gradient_step": 372.0,
+              "reward": 0.0,
+              "entropy": 11.649051666259766
+            },
+            {
+              "gradient_step": 376.0,
+              "reward": 0.0,
+              "entropy": 11.65269947052002
+            },
+            {
+              "gradient_step": 380.0,
+              "reward": 0.0,
+              "entropy": 11.64484977722168
+            },
+            {
+              "gradient_step": 384.0,
+              "reward": 0.0,
+              "entropy": 11.645548820495605
+            },
+            {
+              "gradient_step": 388.0,
+              "reward": 0.0,
+              "entropy": 11.652108192443848
+            },
+            {
+              "gradient_step": 392.0,
+              "reward": 0.0,
+              "entropy": 11.649240493774414
+            },
+            {
+              "gradient_step": 396.0,
+              "reward": 0.0,
+              "entropy": 11.654597282409668
+            },
+            {
+              "gradient_step": 400.0,
+              "reward": 0.0,
+              "entropy": 11.646309852600098
+            }
+          ]
+        },
+        "upper": {
+          "run_id": "q5fkevcu",
+          "source_csv": "neurips_2026/rlvr_entropy_control_overleaf/plots/entropy-filtering-reward-entropy/data/ott-qwen-upper.csv",
+          "source_sha256": "a469e3a9f34007f1261503c51fa9720d2d6c9efc9337213840d0557f4e62de11",
+          "values": [
+            {
+              "gradient_step": 0.0,
+              "reward": 0.37977951765060425,
+              "entropy": 1.0637837648391724
+            },
+            {
+              "gradient_step": 4.0,
+              "reward": 0.3084372282028198,
+              "entropy": 1.0628793239593506
+            },
+            {
+              "gradient_step": 8.0,
+              "reward": 0.3087112307548523,
+              "entropy": 0.9898681640625
+            },
+            {
+              "gradient_step": 12.0,
+              "reward": 0.3782408833503723,
+              "entropy": 0.9963898062705994
+            },
+            {
+              "gradient_step": 16.0,
+              "reward": 0.35636812448501587,
+              "entropy": 0.9830983281135559
+            },
+            {
+              "gradient_step": 20.0,
+              "reward": 0.34068119525909424,
+              "entropy": 0.963620126247406
+            },
+            {
+              "gradient_step": 24.0,
+              "reward": 0.3038179874420166,
+              "entropy": 0.9239708781242371
+            },
+            {
+              "gradient_step": 28.0,
+              "reward": 0.3493402600288391,
+              "entropy": 0.8367597460746765
+            },
+            {
+              "gradient_step": 32.0,
+              "reward": 0.3886539340019226,
+              "entropy": 0.8148776888847351
+            },
+            {
+              "gradient_step": 36.0,
+              "reward": 0.3462594151496887,
+              "entropy": 0.7628421187400818
+            },
+            {
+              "gradient_step": 40.0,
+              "reward": 0.3798888921737671,
+              "entropy": 0.7262621521949768
+            },
+            {
+              "gradient_step": 44.0,
+              "reward": 0.3838801383972168,
+              "entropy": 0.6522597670555115
+            },
+            {
+              "gradient_step": 48.0,
+              "reward": 0.3854101896286011,
+              "entropy": 0.5931431651115417
+            },
+            {
+              "gradient_step": 52.0,
+              "reward": 0.4296589195728302,
+              "entropy": 0.5412867069244385
+            },
+            {
+              "gradient_step": 56.0,
+              "reward": 0.45030665397644043,
+              "entropy": 0.47759339213371277
+            },
+            {
+              "gradient_step": 60.0,
+              "reward": 0.36595457792282104,
+              "entropy": 0.4350937306880951
+            },
+            {
+              "gradient_step": 64.0,
+              "reward": 0.3779650330543518,
+              "entropy": 0.38589438796043396
+            },
+            {
+              "gradient_step": 68.0,
+              "reward": 0.47141969203948975,
+              "entropy": 0.3380362391471863
+            },
+            {
+              "gradient_step": 72.0,
+              "reward": 0.38462674617767334,
+              "entropy": 0.31420043110847473
+            },
+            {
+              "gradient_step": 76.0,
+              "reward": 0.3882100582122803,
+              "entropy": 0.3107459545135498
+            },
+            {
+              "gradient_step": 80.0,
+              "reward": 0.44129011034965515,
+              "entropy": 0.24166779220104218
+            },
+            {
+              "gradient_step": 84.0,
+              "reward": 0.4251076579093933,
+              "entropy": 0.23383697867393494
+            },
+            {
+              "gradient_step": 88.0,
+              "reward": 0.3465680181980133,
+              "entropy": 0.21481028199195862
+            },
+            {
+              "gradient_step": 92.0,
+              "reward": 0.4247664213180542,
+              "entropy": 0.201512411236763
+            },
+            {
+              "gradient_step": 96.0,
+              "reward": 0.40649065375328064,
+              "entropy": 0.18635180592536926
+            },
+            {
+              "gradient_step": 100.0,
+              "reward": 0.46091052889823914,
+              "entropy": 0.16370472311973572
+            },
+            {
+              "gradient_step": 104.0,
+              "reward": 0.40129536390304565,
+              "entropy": 0.15950597822666168
+            },
+            {
+              "gradient_step": 108.0,
+              "reward": 0.3677690923213959,
+              "entropy": 0.14149923622608185
+            },
+            {
+              "gradient_step": 112.0,
+              "reward": 0.5270015001296997,
+              "entropy": 0.14699631929397583
+            },
+            {
+              "gradient_step": 116.0,
+              "reward": 0.42860013246536255,
+              "entropy": 0.14139683544635773
+            },
+            {
+              "gradient_step": 120.0,
+              "reward": 0.416721373796463,
+              "entropy": 0.1266198307275772
+            },
+            {
+              "gradient_step": 124.0,
+              "reward": 0.4758470356464386,
+              "entropy": 0.13401779532432556
+            },
+            {
+              "gradient_step": 128.0,
+              "reward": 0.3965710997581482,
+              "entropy": 0.13007518649101257
+            },
+            {
+              "gradient_step": 132.0,
+              "reward": 0.4147024154663086,
+              "entropy": 0.12544426321983337
+            },
+            {
+              "gradient_step": 136.0,
+              "reward": 0.4217835068702698,
+              "entropy": 0.12465323507785797
+            },
+            {
+              "gradient_step": 140.0,
+              "reward": 0.46009185910224915,
+              "entropy": 0.11629029363393784
+            },
+            {
+              "gradient_step": 144.0,
+              "reward": 0.4068866968154907,
+              "entropy": 0.12381456792354584
+            },
+            {
+              "gradient_step": 148.0,
+              "reward": 0.3872041702270508,
+              "entropy": 0.12624920904636383
+            },
+            {
+              "gradient_step": 152.0,
+              "reward": 0.37779873609542847,
+              "entropy": 0.11858877539634705
+            },
+            {
+              "gradient_step": 156.0,
+              "reward": 0.42150914669036865,
+              "entropy": 0.11489755660295486
+            },
+            {
+              "gradient_step": 160.0,
+              "reward": 0.48886510729789734,
+              "entropy": 0.10123356431722641
+            },
+            {
+              "gradient_step": 164.0,
+              "reward": 0.43903636932373047,
+              "entropy": 0.0979846864938736
+            },
+            {
+              "gradient_step": 168.0,
+              "reward": 0.507895827293396,
+              "entropy": 0.10098570585250854
+            },
+            {
+              "gradient_step": 172.0,
+              "reward": 0.43384891748428345,
+              "entropy": 0.0980958342552185
+            },
+            {
+              "gradient_step": 176.0,
+              "reward": 0.48138466477394104,
+              "entropy": 0.10351559519767761
+            },
+            {
+              "gradient_step": 180.0,
+              "reward": 0.4656231999397278,
+              "entropy": 0.09924909472465515
+            },
+            {
+              "gradient_step": 184.0,
+              "reward": 0.4988739490509033,
+              "entropy": 0.09409451484680176
+            },
+            {
+              "gradient_step": 188.0,
+              "reward": 0.4349530339241028,
+              "entropy": 0.09646423161029816
+            },
+            {
+              "gradient_step": 192.0,
+              "reward": 0.48210904002189636,
+              "entropy": 0.10001130402088165
+            },
+            {
+              "gradient_step": 196.0,
+              "reward": 0.4580303430557251,
+              "entropy": 0.10381581634283066
+            },
+            {
+              "gradient_step": 200.0,
+              "reward": 0.5350328087806702,
+              "entropy": 0.09290667623281479
+            },
+            {
+              "gradient_step": 204.0,
+              "reward": 0.40343260765075684,
+              "entropy": 0.08534014970064163
+            },
+            {
+              "gradient_step": 208.0,
+              "reward": 0.5033964514732361,
+              "entropy": 0.08085215091705322
+            },
+            {
+              "gradient_step": 212.0,
+              "reward": 0.4546586275100708,
+              "entropy": 0.06658728420734406
+            },
+            {
+              "gradient_step": 216.0,
+              "reward": 0.43805408477783203,
+              "entropy": 0.07297582924365997
+            },
+            {
+              "gradient_step": 220.0,
+              "reward": 0.42106354236602783,
+              "entropy": 0.07387350499629974
+            },
+            {
+              "gradient_step": 224.0,
+              "reward": 0.4859808683395386,
+              "entropy": 0.0757620632648468
+            },
+            {
+              "gradient_step": 228.0,
+              "reward": 0.5115891695022583,
+              "entropy": 0.07116547971963882
+            },
+            {
+              "gradient_step": 232.0,
+              "reward": 0.5546548962593079,
+              "entropy": 0.07784291356801987
+            },
+            {
+              "gradient_step": 236.0,
+              "reward": 0.5010846853256226,
+              "entropy": 0.07506795227527618
+            },
+            {
+              "gradient_step": 240.0,
+              "reward": 0.44614022970199585,
+              "entropy": 0.06950344890356064
+            },
+            {
+              "gradient_step": 244.0,
+              "reward": 0.41947507858276367,
+              "entropy": 0.07114074379205704
+            },
+            {
+              "gradient_step": 248.0,
+              "reward": 0.4925411343574524,
+              "entropy": 0.0712324008345604
+            },
+            {
+              "gradient_step": 252.0,
+              "reward": 0.4661114513874054,
+              "entropy": 0.06685082614421844
+            },
+            {
+              "gradient_step": 256.0,
+              "reward": 0.44582757353782654,
+              "entropy": 0.06531025469303131
+            },
+            {
+              "gradient_step": 260.0,
+              "reward": 0.42352545261383057,
+              "entropy": 0.06279796361923218
+            },
+            {
+              "gradient_step": 264.0,
+              "reward": 0.4727235436439514,
+              "entropy": 0.06257565319538116
+            },
+            {
+              "gradient_step": 268.0,
+              "reward": 0.4702428877353668,
+              "entropy": 0.06288275122642517
+            },
+            {
+              "gradient_step": 272.0,
+              "reward": 0.45555129647254944,
+              "entropy": 0.05695820972323418
+            },
+            {
+              "gradient_step": 276.0,
+              "reward": 0.5012141466140747,
+              "entropy": 0.06095030903816223
+            },
+            {
+              "gradient_step": 280.0,
+              "reward": 0.46507886052131653,
+              "entropy": 0.06036452203989029
+            },
+            {
+              "gradient_step": 284.0,
+              "reward": 0.5091363787651062,
+              "entropy": 0.06213899329304695
+            },
+            {
+              "gradient_step": 288.0,
+              "reward": 0.5000783801078796,
+              "entropy": 0.058152247220277786
+            },
+            {
+              "gradient_step": 292.0,
+              "reward": 0.4028193950653076,
+              "entropy": 0.05662818253040314
+            },
+            {
+              "gradient_step": 296.0,
+              "reward": 0.4633195102214813,
+              "entropy": 0.053224410861730576
+            },
+            {
+              "gradient_step": 300.0,
+              "reward": 0.401416152715683,
+              "entropy": 0.056655436754226685
+            },
+            {
+              "gradient_step": 304.0,
+              "reward": 0.4857035279273987,
+              "entropy": 0.05268338695168495
+            },
+            {
+              "gradient_step": 308.0,
+              "reward": 0.4494702219963074,
+              "entropy": 0.05169465392827988
+            },
+            {
+              "gradient_step": 312.0,
+              "reward": 0.4676653742790222,
+              "entropy": 0.05494889244437218
+            },
+            {
+              "gradient_step": 316.0,
+              "reward": 0.4804277718067169,
+              "entropy": 0.05003690347075462
+            },
+            {
+              "gradient_step": 320.0,
+              "reward": 0.4909283220767975,
+              "entropy": 0.051341768354177475
+            },
+            {
+              "gradient_step": 324.0,
+              "reward": 0.4383755326271057,
+              "entropy": 0.04759514331817627
+            },
+            {
+              "gradient_step": 328.0,
+              "reward": 0.6066063642501831,
+              "entropy": 0.047635968774557114
+            },
+            {
+              "gradient_step": 332.0,
+              "reward": 0.4488708972930908,
+              "entropy": 0.05441023409366608
+            },
+            {
+              "gradient_step": 336.0,
+              "reward": 0.5143328905105591,
+              "entropy": 0.05133957415819168
+            },
+            {
+              "gradient_step": 340.0,
+              "reward": 0.4544016718864441,
+              "entropy": 0.0525478832423687
+            },
+            {
+              "gradient_step": 344.0,
+              "reward": 0.5265520811080933,
+              "entropy": 0.05170825123786926
+            },
+            {
+              "gradient_step": 348.0,
+              "reward": 0.515915036201477,
+              "entropy": 0.047102704644203186
+            },
+            {
+              "gradient_step": 352.0,
+              "reward": 0.5129178166389465,
+              "entropy": 0.04498054459691048
+            },
+            {
+              "gradient_step": 356.0,
+              "reward": 0.502253532409668,
+              "entropy": 0.050661105662584305
+            },
+            {
+              "gradient_step": 360.0,
+              "reward": 0.45434409379959106,
+              "entropy": 0.04469560831785202
+            },
+            {
+              "gradient_step": 364.0,
+              "reward": 0.4604912996292114,
+              "entropy": 0.0433427058160305
+            },
+            {
+              "gradient_step": 368.0,
+              "reward": 0.4236486554145813,
+              "entropy": 0.04667852073907852
+            },
+            {
+              "gradient_step": 372.0,
+              "reward": 0.4758022129535675,
+              "entropy": 0.04797054082155228
+            },
+            {
+              "gradient_step": 376.0,
+              "reward": 0.5115498900413513,
+              "entropy": 0.044407639652490616
+            },
+            {
+              "gradient_step": 380.0,
+              "reward": 0.5438425540924072,
+              "entropy": 0.04408508166670799
+            },
+            {
+              "gradient_step": 384.0,
+              "reward": 0.5250498056411743,
+              "entropy": 0.04325440153479576
+            },
+            {
+              "gradient_step": 388.0,
+              "reward": 0.5305888652801514,
+              "entropy": 0.04506600648164749
+            },
+            {
+              "gradient_step": 392.0,
+              "reward": 0.4543435275554657,
+              "entropy": 0.042881593108177185
+            },
+            {
+              "gradient_step": 396.0,
+              "reward": 0.49578893184661865,
+              "entropy": 0.04876988008618355
+            },
+            {
+              "gradient_step": 400.0,
+              "reward": 0.5137948989868164,
+              "entropy": 0.0457925871014595
+            }
+          ]
+        },
+        "two-sided": {
+          "run_id": "wugi6j1j",
+          "source_csv": "neurips_2026/rlvr_entropy_control_overleaf/plots/entropy-filtering-reward-entropy/data/ott-qwen-two-sided.csv",
+          "source_sha256": "d9a9934c9f1d4a819ca523ac3dae00b65fcfe3741fbf87134daa062779328af0",
+          "values": [
+            {
+              "gradient_step": 0.0,
+              "reward": 0.3915993571281433,
+              "entropy": 1.0406773090362549
+            },
+            {
+              "gradient_step": 4.0,
+              "reward": 0.3019968867301941,
+              "entropy": 1.0792455673217773
+            },
+            {
+              "gradient_step": 8.0,
+              "reward": 0.30824965238571167,
+              "entropy": 1.0204081535339355
+            },
+            {
+              "gradient_step": 12.0,
+              "reward": 0.37818339467048645,
+              "entropy": 1.0225754976272583
+            },
+            {
+              "gradient_step": 16.0,
+              "reward": 0.3995107412338257,
+              "entropy": 1.0222222805023193
+            },
+            {
+              "gradient_step": 20.0,
+              "reward": 0.3322775065898895,
+              "entropy": 1.0681109428405762
+            },
+            {
+              "gradient_step": 24.0,
+              "reward": 0.2924523651599884,
+              "entropy": 1.0839385986328125
+            },
+            {
+              "gradient_step": 28.0,
+              "reward": 0.3371862769126892,
+              "entropy": 1.0101685523986816
+            },
+            {
+              "gradient_step": 32.0,
+              "reward": 0.3503023386001587,
+              "entropy": 1.0498239994049072
+            },
+            {
+              "gradient_step": 36.0,
+              "reward": 0.3098418712615967,
+              "entropy": 0.9973440170288086
+            },
+            {
+              "gradient_step": 40.0,
+              "reward": 0.3684176504611969,
+              "entropy": 1.065393328666687
+            },
+            {
+              "gradient_step": 44.0,
+              "reward": 0.3311513662338257,
+              "entropy": 1.0273644924163818
+            },
+            {
+              "gradient_step": 48.0,
+              "reward": 0.33397138118743896,
+              "entropy": 1.0597268342971802
+            },
+            {
+              "gradient_step": 52.0,
+              "reward": 0.3851886987686157,
+              "entropy": 1.0427942276000977
+            },
+            {
+              "gradient_step": 56.0,
+              "reward": 0.41448310017585754,
+              "entropy": 0.9988614320755005
+            },
+            {
+              "gradient_step": 60.0,
+              "reward": 0.34136253595352173,
+              "entropy": 1.0586891174316406
+            },
+            {
+              "gradient_step": 64.0,
+              "reward": 0.3624025583267212,
+              "entropy": 1.0488941669464111
+            },
+            {
+              "gradient_step": 68.0,
+              "reward": 0.40193501114845276,
+              "entropy": 1.0172170400619507
+            },
+            {
+              "gradient_step": 72.0,
+              "reward": 0.34156957268714905,
+              "entropy": 1.0213432312011719
+            },
+            {
+              "gradient_step": 76.0,
+              "reward": 0.3615947961807251,
+              "entropy": 1.104686975479126
+            },
+            {
+              "gradient_step": 80.0,
+              "reward": 0.3771250247955322,
+              "entropy": 1.075015664100647
+            },
+            {
+              "gradient_step": 84.0,
+              "reward": 0.41095227003097534,
+              "entropy": 1.117048740386963
+            },
+            {
+              "gradient_step": 88.0,
+              "reward": 0.3627643287181854,
+              "entropy": 1.1368341445922852
+            },
+            {
+              "gradient_step": 92.0,
+              "reward": 0.3834201395511627,
+              "entropy": 1.1807544231414795
+            },
+            {
+              "gradient_step": 96.0,
+              "reward": 0.3829599618911743,
+              "entropy": 1.1266891956329346
+            },
+            {
+              "gradient_step": 100.0,
+              "reward": 0.4278099536895752,
+              "entropy": 1.1689817905426025
+            },
+            {
+              "gradient_step": 104.0,
+              "reward": 0.3866225779056549,
+              "entropy": 1.1238410472869873
+            },
+            {
+              "gradient_step": 108.0,
+              "reward": 0.43697547912597656,
+              "entropy": 1.2275617122650146
+            },
+            {
+              "gradient_step": 112.0,
+              "reward": 0.49659618735313416,
+              "entropy": 1.2104674577713013
+            },
+            {
+              "gradient_step": 116.0,
+              "reward": 0.40666115283966064,
+              "entropy": 1.3658777475357056
+            },
+            {
+              "gradient_step": 120.0,
+              "reward": 0.4362199306488037,
+              "entropy": 1.5306662321090698
+            },
+            {
+              "gradient_step": 124.0,
+              "reward": 0.4292633831501007,
+              "entropy": 1.7754616737365723
+            },
+            {
+              "gradient_step": 128.0,
+              "reward": 0.4116028845310211,
+              "entropy": 1.9620689153671265
+            },
+            {
+              "gradient_step": 132.0,
+              "reward": 0.40201032161712646,
+              "entropy": 2.327824592590332
+            },
+            {
+              "gradient_step": 136.0,
+              "reward": 0.4160022437572479,
+              "entropy": 2.801362991333008
+            },
+            {
+              "gradient_step": 140.0,
+              "reward": 0.4156975746154785,
+              "entropy": 3.958768367767334
+            },
+            {
+              "gradient_step": 144.0,
+              "reward": 0.36798304319381714,
+              "entropy": 5.318191051483154
+            },
+            {
+              "gradient_step": 148.0,
+              "reward": 0.2925785779953003,
+              "entropy": 6.42333984375
+            },
+            {
+              "gradient_step": 152.0,
+              "reward": 0.21942105889320374,
+              "entropy": 7.686134338378906
+            },
+            {
+              "gradient_step": 156.0,
+              "reward": 0.1148776113986969,
+              "entropy": 8.627825736999512
+            },
+            {
+              "gradient_step": 160.0,
+              "reward": 0.04648866876959801,
+              "entropy": 9.430734634399414
+            },
+            {
+              "gradient_step": 164.0,
+              "reward": 0.010808201506733894,
+              "entropy": 9.6012544631958
+            },
+            {
+              "gradient_step": 168.0,
+              "reward": 0.009465144015848637,
+              "entropy": 9.233333587646484
+            },
+            {
+              "gradient_step": 172.0,
+              "reward": 0.0026208600029349327,
+              "entropy": 8.497363090515137
+            },
+            {
+              "gradient_step": 176.0,
+              "reward": 0.0015024038730189204,
+              "entropy": 8.406834602355957
+            },
+            {
+              "gradient_step": 180.0,
+              "reward": 0.008374938741326332,
+              "entropy": 9.008506774902344
+            },
+            {
+              "gradient_step": 184.0,
+              "reward": 0.005542200990021229,
+              "entropy": 9.548258781433105
+            },
+            {
+              "gradient_step": 188.0,
+              "reward": 0.003004807746037841,
+              "entropy": 10.423796653747559
+            },
+            {
+              "gradient_step": 192.0,
+              "reward": 0.0,
+              "entropy": 10.923101425170898
+            },
+            {
+              "gradient_step": 196.0,
+              "reward": 0.0,
+              "entropy": 11.067914009094238
+            },
+            {
+              "gradient_step": 200.0,
+              "reward": 0.0,
+              "entropy": 11.117569923400879
+            },
+            {
+              "gradient_step": 204.0,
+              "reward": 0.0,
+              "entropy": 11.143799781799316
+            },
+            {
+              "gradient_step": 208.0,
+              "reward": 0.0,
+              "entropy": 11.161309242248535
+            },
+            {
+              "gradient_step": 212.0,
+              "reward": 0.0,
+              "entropy": 11.185624122619629
+            },
+            {
+              "gradient_step": 216.0,
+              "reward": 0.0,
+              "entropy": 11.178422927856445
+            },
+            {
+              "gradient_step": 220.0,
+              "reward": 0.0,
+              "entropy": 11.17761516571045
+            },
+            {
+              "gradient_step": 224.0,
+              "reward": 0.0,
+              "entropy": 11.186922073364258
+            },
+            {
+              "gradient_step": 228.0,
+              "reward": 0.0,
+              "entropy": 11.184810638427734
+            },
+            {
+              "gradient_step": 232.0,
+              "reward": 0.0,
+              "entropy": 11.204407691955566
+            },
+            {
+              "gradient_step": 236.0,
+              "reward": 0.0,
+              "entropy": 11.187721252441406
+            },
+            {
+              "gradient_step": 240.0,
+              "reward": 0.0,
+              "entropy": 11.178544044494629
+            },
+            {
+              "gradient_step": 244.0,
+              "reward": 0.0,
+              "entropy": 11.194380760192871
+            },
+            {
+              "gradient_step": 248.0,
+              "reward": 0.0,
+              "entropy": 11.192408561706543
+            },
+            {
+              "gradient_step": 252.0,
+              "reward": 0.0,
+              "entropy": 11.21110725402832
+            },
+            {
+              "gradient_step": 256.0,
+              "reward": 0.0,
+              "entropy": 11.201115608215332
+            },
+            {
+              "gradient_step": 260.0,
+              "reward": 0.0,
+              "entropy": 11.201621055603027
+            },
+            {
+              "gradient_step": 264.0,
+              "reward": 0.0,
+              "entropy": 11.189422607421875
+            },
+            {
+              "gradient_step": 268.0,
+              "reward": 0.0,
+              "entropy": 11.19587230682373
+            },
+            {
+              "gradient_step": 272.0,
+              "reward": 0.0,
+              "entropy": 11.191631317138672
+            },
+            {
+              "gradient_step": 276.0,
+              "reward": 0.0,
+              "entropy": 11.192387580871582
+            },
+            {
+              "gradient_step": 280.0,
+              "reward": 0.0,
+              "entropy": 11.184175491333008
+            },
+            {
+              "gradient_step": 284.0,
+              "reward": 0.0,
+              "entropy": 11.198897361755371
+            },
+            {
+              "gradient_step": 288.0,
+              "reward": 0.0,
+              "entropy": 11.195391654968262
+            },
+            {
+              "gradient_step": 292.0,
+              "reward": 0.0,
+              "entropy": 11.206535339355469
+            },
+            {
+              "gradient_step": 296.0,
+              "reward": 0.0,
+              "entropy": 11.179550170898438
+            },
+            {
+              "gradient_step": 300.0,
+              "reward": 0.0,
+              "entropy": 11.201745986938477
+            },
+            {
+              "gradient_step": 304.0,
+              "reward": 0.0,
+              "entropy": 11.19316291809082
+            },
+            {
+              "gradient_step": 308.0,
+              "reward": 0.0,
+              "entropy": 11.199126243591309
+            },
+            {
+              "gradient_step": 312.0,
+              "reward": 0.0,
+              "entropy": 11.199546813964844
+            },
+            {
+              "gradient_step": 316.0,
+              "reward": 0.0,
+              "entropy": 11.20085620880127
+            },
+            {
+              "gradient_step": 320.0,
+              "reward": 0.0,
+              "entropy": 11.189238548278809
+            },
+            {
+              "gradient_step": 324.0,
+              "reward": 0.0,
+              "entropy": 11.199355125427246
+            },
+            {
+              "gradient_step": 328.0,
+              "reward": 0.0,
+              "entropy": 11.204904556274414
+            },
+            {
+              "gradient_step": 332.0,
+              "reward": 0.0,
+              "entropy": 11.203857421875
+            },
+            {
+              "gradient_step": 336.0,
+              "reward": 0.0,
+              "entropy": 11.195396423339844
+            },
+            {
+              "gradient_step": 340.0,
+              "reward": 0.0,
+              "entropy": 11.192428588867188
+            },
+            {
+              "gradient_step": 344.0,
+              "reward": 0.0,
+              "entropy": 11.188394546508789
+            },
+            {
+              "gradient_step": 348.0,
+              "reward": 0.0,
+              "entropy": 11.186931610107422
+            },
+            {
+              "gradient_step": 352.0,
+              "reward": 0.0,
+              "entropy": 11.18327808380127
+            },
+            {
+              "gradient_step": 356.0,
+              "reward": 0.0,
+              "entropy": 11.207779884338379
+            },
+            {
+              "gradient_step": 360.0,
+              "reward": 0.0,
+              "entropy": 11.201436042785645
+            },
+            {
+              "gradient_step": 364.0,
+              "reward": 0.0,
+              "entropy": 11.191497802734375
+            },
+            {
+              "gradient_step": 368.0,
+              "reward": 0.0,
+              "entropy": 11.196637153625488
+            },
+            {
+              "gradient_step": 372.0,
+              "reward": 0.0,
+              "entropy": 11.192745208740234
+            },
+            {
+              "gradient_step": 376.0,
+              "reward": 0.0,
+              "entropy": 11.198497772216797
+            },
+            {
+              "gradient_step": 380.0,
+              "reward": 0.0,
+              "entropy": 11.193406105041504
+            },
+            {
+              "gradient_step": 384.0,
+              "reward": 0.0,
+              "entropy": 11.203490257263184
+            },
+            {
+              "gradient_step": 388.0,
+              "reward": 0.0,
+              "entropy": 11.173014640808105
+            },
+            {
+              "gradient_step": 392.0,
+              "reward": 0.0,
+              "entropy": 11.202067375183105
+            },
+            {
+              "gradient_step": 396.0,
+              "reward": 0.0,
+              "entropy": 11.200003623962402
+            },
+            {
+              "gradient_step": 400.0,
+              "reward": 0.0,
+              "entropy": 11.214937210083008
+            }
+          ]
+        }
+      }
+    },
+    {
+      "model": "Gemma3-4B",
+      "dataset": "NuminaMath-LEAN",
+      "objective": "DAPO",
+      "tau_plus": 0.2,
+      "tau_minus": -0.1,
+      "displayed_steps": [
+        0,
+        600
+      ],
+      "series": {
+        "baseline": {
+          "run_id": "ne4g8sig",
+          "source_csv": "neurips_2026/rlvr_entropy_control_overleaf/plots/entropy-filtering-reward-entropy/data/numina-gemma-baseline.csv",
+          "source_sha256": "ad90a29a8c554944155a7ece790d107d738bdc04c553733f65c174ddd3e5417a",
+          "values": [
+            {
+              "gradient_step": 0.0,
+              "reward": 0.07421875,
+              "entropy": 0.1481153815984726
+            },
+            {
+              "gradient_step": 4.0,
+              "reward": 0.12109375,
+              "entropy": 0.19231866300106049
+            },
+            {
+              "gradient_step": 8.0,
+              "reward": 0.19140625,
+              "entropy": 0.1580629050731659
+            },
+            {
+              "gradient_step": 12.0,
+              "reward": 0.140625,
+              "entropy": 0.2026318460702896
+            },
+            {
+              "gradient_step": 16.0,
+              "reward": 0.0703125,
+              "entropy": 0.1626177728176117
+            },
+            {
+              "gradient_step": 20.0,
+              "reward": 0.234375,
+              "entropy": 0.18878726661205292
+            },
+            {
+              "gradient_step": 24.0,
+              "reward": 0.21875,
+              "entropy": 0.18518736958503723
+            },
+            {
+              "gradient_step": 28.0,
+              "reward": 0.29296875,
+              "entropy": 0.21077096462249756
+            },
+            {
+              "gradient_step": 32.0,
+              "reward": 0.50390625,
+              "entropy": 0.17041553556919098
+            },
+            {
+              "gradient_step": 36.0,
+              "reward": 0.24609375,
+              "entropy": 0.16360530257225037
+            },
+            {
+              "gradient_step": 40.0,
+              "reward": 0.33203125,
+              "entropy": 0.1774137318134308
+            },
+            {
+              "gradient_step": 44.0,
+              "reward": 0.40625,
+              "entropy": 0.16778671741485596
+            },
+            {
+              "gradient_step": 48.0,
+              "reward": 0.2890625,
+              "entropy": 0.18233069777488708
+            },
+            {
+              "gradient_step": 52.0,
+              "reward": 0.32421875,
+              "entropy": 0.20438623428344727
+            },
+            {
+              "gradient_step": 56.0,
+              "reward": 0.32421875,
+              "entropy": 0.23478180170059204
+            },
+            {
+              "gradient_step": 60.0,
+              "reward": 0.33984375,
+              "entropy": 0.1804550737142563
+            },
+            {
+              "gradient_step": 64.0,
+              "reward": 0.26171875,
+              "entropy": 0.21634258329868317
+            },
+            {
+              "gradient_step": 68.0,
+              "reward": 0.40625,
+              "entropy": 0.21931692957878113
+            },
+            {
+              "gradient_step": 72.0,
+              "reward": 0.33203125,
+              "entropy": 0.19283348321914673
+            },
+            {
+              "gradient_step": 76.0,
+              "reward": 0.2890625,
+              "entropy": 0.2020299732685089
+            },
+            {
+              "gradient_step": 80.0,
+              "reward": 0.2890625,
+              "entropy": 0.2264394760131836
+            },
+            {
+              "gradient_step": 84.0,
+              "reward": 0.44140625,
+              "entropy": 0.2223944067955017
+            },
+            {
+              "gradient_step": 88.0,
+              "reward": 0.37890625,
+              "entropy": 0.18519335985183716
+            },
+            {
+              "gradient_step": 92.0,
+              "reward": 0.23828125,
+              "entropy": 0.17223669588565826
+            },
+            {
+              "gradient_step": 96.0,
+              "reward": 0.34375,
+              "entropy": 0.24440898001194
+            },
+            {
+              "gradient_step": 100.0,
+              "reward": 0.36328125,
+              "entropy": 0.18535128235816956
+            },
+            {
+              "gradient_step": 104.0,
+              "reward": 0.52734375,
+              "entropy": 0.2172563225030899
+            },
+            {
+              "gradient_step": 108.0,
+              "reward": 0.25,
+              "entropy": 0.24096554517745972
+            },
+            {
+              "gradient_step": 112.0,
+              "reward": 0.48046875,
+              "entropy": 0.19405122101306915
+            },
+            {
+              "gradient_step": 116.0,
+              "reward": 0.3359375,
+              "entropy": 0.23940140008926392
+            },
+            {
+              "gradient_step": 120.0,
+              "reward": 0.43359375,
+              "entropy": 0.20567086338996887
+            },
+            {
+              "gradient_step": 124.0,
+              "reward": 0.26953125,
+              "entropy": 0.21357068419456482
+            },
+            {
+              "gradient_step": 128.0,
+              "reward": 0.46875,
+              "entropy": 0.19015832245349884
+            },
+            {
+              "gradient_step": 132.0,
+              "reward": 0.34765625,
+              "entropy": 0.18105213344097137
+            },
+            {
+              "gradient_step": 136.0,
+              "reward": 0.30859375,
+              "entropy": 0.19998008012771606
+            },
+            {
+              "gradient_step": 140.0,
+              "reward": 0.4765625,
+              "entropy": 0.18292947113513947
+            },
+            {
+              "gradient_step": 144.0,
+              "reward": 0.39453125,
+              "entropy": 0.19470609724521637
+            },
+            {
+              "gradient_step": 148.0,
+              "reward": 0.375,
+              "entropy": 0.19386759400367737
+            },
+            {
+              "gradient_step": 152.0,
+              "reward": 0.4453125,
+              "entropy": 0.19494760036468506
+            },
+            {
+              "gradient_step": 156.0,
+              "reward": 0.27734375,
+              "entropy": 0.27957943081855774
+            },
+            {
+              "gradient_step": 160.0,
+              "reward": 0.38671875,
+              "entropy": 0.22714439034461975
+            },
+            {
+              "gradient_step": 164.0,
+              "reward": 0.45703125,
+              "entropy": 0.20772981643676758
+            },
+            {
+              "gradient_step": 168.0,
+              "reward": 0.4140625,
+              "entropy": 0.2057007998228073
+            },
+            {
+              "gradient_step": 172.0,
+              "reward": 0.359375,
+              "entropy": 0.2829868495464325
+            },
+            {
+              "gradient_step": 176.0,
+              "reward": 0.359375,
+              "entropy": 0.25795480608940125
+            },
+            {
+              "gradient_step": 180.0,
+              "reward": 0.375,
+              "entropy": 0.22948594391345978
+            },
+            {
+              "gradient_step": 184.0,
+              "reward": 0.34765625,
+              "entropy": 0.32342514395713806
+            },
+            {
+              "gradient_step": 188.0,
+              "reward": 0.55078125,
+              "entropy": 0.2587324380874634
+            },
+            {
+              "gradient_step": 192.0,
+              "reward": 0.328125,
+              "entropy": 0.30091753602027893
+            },
+            {
+              "gradient_step": 196.0,
+              "reward": 0.34765625,
+              "entropy": 0.3322538435459137
+            },
+            {
+              "gradient_step": 200.0,
+              "reward": 0.34765625,
+              "entropy": 0.28324225544929504
+            },
+            {
+              "gradient_step": 204.0,
+              "reward": 0.3359375,
+              "entropy": 0.2999081015586853
+            },
+            {
+              "gradient_step": 208.0,
+              "reward": 0.5,
+              "entropy": 0.25736305117607117
+            },
+            {
+              "gradient_step": 212.0,
+              "reward": 0.40625,
+              "entropy": 0.2843426764011383
+            },
+            {
+              "gradient_step": 216.0,
+              "reward": 0.42578125,
+              "entropy": 0.27476030588150024
+            },
+            {
+              "gradient_step": 220.0,
+              "reward": 0.22265625,
+              "entropy": 0.36170464754104614
+            },
+            {
+              "gradient_step": 224.0,
+              "reward": 0.3671875,
+              "entropy": 0.3052125871181488
+            },
+            {
+              "gradient_step": 228.0,
+              "reward": 0.4609375,
+              "entropy": 0.2857360541820526
+            },
+            {
+              "gradient_step": 232.0,
+              "reward": 0.36328125,
+              "entropy": 0.31746751070022583
+            },
+            {
+              "gradient_step": 236.0,
+              "reward": 0.45703125,
+              "entropy": 0.35420429706573486
+            },
+            {
+              "gradient_step": 240.0,
+              "reward": 0.34765625,
+              "entropy": 0.3353584408760071
+            },
+            {
+              "gradient_step": 244.0,
+              "reward": 0.36328125,
+              "entropy": 0.36152350902557373
+            },
+            {
+              "gradient_step": 248.0,
+              "reward": 0.4375,
+              "entropy": 0.3007420003414154
+            },
+            {
+              "gradient_step": 252.0,
+              "reward": 0.37890625,
+              "entropy": 0.4443618059158325
+            },
+            {
+              "gradient_step": 256.0,
+              "reward": 0.3515625,
+              "entropy": 0.42769625782966614
+            },
+            {
+              "gradient_step": 260.0,
+              "reward": 0.49609375,
+              "entropy": 0.40870967507362366
+            },
+            {
+              "gradient_step": 264.0,
+              "reward": 0.2109375,
+              "entropy": 0.37317556142807007
+            },
+            {
+              "gradient_step": 268.0,
+              "reward": 0.3203125,
+              "entropy": 0.4164664149284363
+            },
+            {
+              "gradient_step": 272.0,
+              "reward": 0.34765625,
+              "entropy": 0.4193805754184723
+            },
+            {
+              "gradient_step": 276.0,
+              "reward": 0.33203125,
+              "entropy": 0.42203468084335327
+            },
+            {
+              "gradient_step": 280.0,
+              "reward": 0.3046875,
+              "entropy": 0.3999718725681305
+            },
+            {
+              "gradient_step": 284.0,
+              "reward": 0.36328125,
+              "entropy": 0.4027596712112427
+            },
+            {
+              "gradient_step": 288.0,
+              "reward": 0.3828125,
+              "entropy": 0.4495880901813507
+            },
+            {
+              "gradient_step": 292.0,
+              "reward": 0.3828125,
+              "entropy": 0.3801853358745575
+            },
+            {
+              "gradient_step": 296.0,
+              "reward": 0.37109375,
+              "entropy": 0.4105880856513977
+            },
+            {
+              "gradient_step": 300.0,
+              "reward": 0.4296875,
+              "entropy": 0.379062294960022
+            },
+            {
+              "gradient_step": 304.0,
+              "reward": 0.3671875,
+              "entropy": 0.44805440306663513
+            },
+            {
+              "gradient_step": 308.0,
+              "reward": 0.3359375,
+              "entropy": 0.4518437385559082
+            },
+            {
+              "gradient_step": 312.0,
+              "reward": 0.17578125,
+              "entropy": 0.6258694529533386
+            },
+            {
+              "gradient_step": 316.0,
+              "reward": 0.4140625,
+              "entropy": 0.5086916089057922
+            },
+            {
+              "gradient_step": 320.0,
+              "reward": 0.41015625,
+              "entropy": 0.4741775393486023
+            },
+            {
+              "gradient_step": 324.0,
+              "reward": 0.40234375,
+              "entropy": 0.5931523442268372
+            },
+            {
+              "gradient_step": 328.0,
+              "reward": 0.28125,
+              "entropy": 0.8094310760498047
+            },
+            {
+              "gradient_step": 332.0,
+              "reward": 0.4921875,
+              "entropy": 0.5145263075828552
+            },
+            {
+              "gradient_step": 336.0,
+              "reward": 0.40625,
+              "entropy": 0.5581117868423462
+            },
+            {
+              "gradient_step": 340.0,
+              "reward": 0.41015625,
+              "entropy": 0.482768714427948
+            },
+            {
+              "gradient_step": 344.0,
+              "reward": 0.5390625,
+              "entropy": 0.48730745911598206
+            },
+            {
+              "gradient_step": 348.0,
+              "reward": 0.34765625,
+              "entropy": 0.748665452003479
+            },
+            {
+              "gradient_step": 352.0,
+              "reward": 0.37890625,
+              "entropy": 0.9797077178955078
+            },
+            {
+              "gradient_step": 356.0,
+              "reward": 0.44140625,
+              "entropy": 1.3250021934509277
+            },
+            {
+              "gradient_step": 360.0,
+              "reward": 0.296875,
+              "entropy": 1.174251914024353
+            },
+            {
+              "gradient_step": 364.0,
+              "reward": 0.27734375,
+              "entropy": 3.1357028484344482
+            },
+            {
+              "gradient_step": 368.0,
+              "reward": 0.23046875,
+              "entropy": 3.7431986331939697
+            },
+            {
+              "gradient_step": 372.0,
+              "reward": 0.26171875,
+              "entropy": 4.605184078216553
+            },
+            {
+              "gradient_step": 376.0,
+              "reward": 0.20703125,
+              "entropy": 5.91247034072876
+            },
+            {
+              "gradient_step": 380.0,
+              "reward": 0.2265625,
+              "entropy": 6.2230048179626465
+            },
+            {
+              "gradient_step": 384.0,
+              "reward": 0.16015625,
+              "entropy": 7.12124490737915
+            },
+            {
+              "gradient_step": 388.0,
+              "reward": 0.14453125,
+              "entropy": 7.980291366577148
+            },
+            {
+              "gradient_step": 392.0,
+              "reward": 0.07421875,
+              "entropy": 8.89342975616455
+            },
+            {
+              "gradient_step": 396.0,
+              "reward": 0.1171875,
+              "entropy": 8.571810722351074
+            },
+            {
+              "gradient_step": 400.0,
+              "reward": 0.109375,
+              "entropy": 8.755746841430664
+            },
+            {
+              "gradient_step": 404.0,
+              "reward": 0.109375,
+              "entropy": 8.780558586120605
+            },
+            {
+              "gradient_step": 408.0,
+              "reward": 0.12109375,
+              "entropy": 9.266509056091309
+            },
+            {
+              "gradient_step": 412.0,
+              "reward": 0.05859375,
+              "entropy": 9.389215469360352
+            },
+            {
+              "gradient_step": 416.0,
+              "reward": 0.11328125,
+              "entropy": 9.188130378723145
+            },
+            {
+              "gradient_step": 420.0,
+              "reward": 0.12109375,
+              "entropy": 9.377543449401855
+            },
+            {
+              "gradient_step": 424.0,
+              "reward": 0.10546875,
+              "entropy": 9.422220230102539
+            },
+            {
+              "gradient_step": 428.0,
+              "reward": 0.14453125,
+              "entropy": 9.027153968811035
+            },
+            {
+              "gradient_step": 432.0,
+              "reward": 0.07421875,
+              "entropy": 8.997051239013672
+            },
+            {
+              "gradient_step": 436.0,
+              "reward": 0.0390625,
+              "entropy": 9.471144676208496
+            },
+            {
+              "gradient_step": 440.0,
+              "reward": 0.05859375,
+              "entropy": 9.422442436218262
+            },
+            {
+              "gradient_step": 444.0,
+              "reward": 0.09375,
+              "entropy": 9.249544143676758
+            },
+            {
+              "gradient_step": 448.0,
+              "reward": 0.09375,
+              "entropy": 8.092988967895508
+            },
+            {
+              "gradient_step": 452.0,
+              "reward": 0.05078125,
+              "entropy": 7.399126052856445
+            },
+            {
+              "gradient_step": 456.0,
+              "reward": 0.0390625,
+              "entropy": 7.250395774841309
+            },
+            {
+              "gradient_step": 460.0,
+              "reward": 0.0625,
+              "entropy": 7.287612438201904
+            },
+            {
+              "gradient_step": 464.0,
+              "reward": 0.05078125,
+              "entropy": 7.456421852111816
+            },
+            {
+              "gradient_step": 468.0,
+              "reward": 0.12890625,
+              "entropy": 8.382745742797852
+            },
+            {
+              "gradient_step": 472.0,
+              "reward": 0.078125,
+              "entropy": 10.169203758239746
+            },
+            {
+              "gradient_step": 476.0,
+              "reward": 0.05859375,
+              "entropy": 10.126832008361816
+            },
+            {
+              "gradient_step": 480.0,
+              "reward": 0.02734375,
+              "entropy": 11.40511703491211
+            },
+            {
+              "gradient_step": 484.0,
+              "reward": 0.078125,
+              "entropy": 11.48088264465332
+            },
+            {
+              "gradient_step": 488.0,
+              "reward": 0.0390625,
+              "entropy": 11.615259170532227
+            },
+            {
+              "gradient_step": 492.0,
+              "reward": 0.08984375,
+              "entropy": 11.613579750061035
+            },
+            {
+              "gradient_step": 496.0,
+              "reward": 0.02734375,
+              "entropy": 11.3291597366333
+            },
+            {
+              "gradient_step": 500.0,
+              "reward": 0.0390625,
+              "entropy": 11.549888610839844
+            },
+            {
+              "gradient_step": 504.0,
+              "reward": 0.0546875,
+              "entropy": 11.583833694458008
+            },
+            {
+              "gradient_step": 508.0,
+              "reward": 0.109375,
+              "entropy": 11.664064407348633
+            },
+            {
+              "gradient_step": 512.0,
+              "reward": 0.078125,
+              "entropy": 11.687906265258789
+            },
+            {
+              "gradient_step": 516.0,
+              "reward": 0.04296875,
+              "entropy": 11.826231956481934
+            },
+            {
+              "gradient_step": 520.0,
+              "reward": 0.02734375,
+              "entropy": 11.752290725708008
+            },
+            {
+              "gradient_step": 524.0,
+              "reward": 0.0078125,
+              "entropy": 11.828149795532227
+            },
+            {
+              "gradient_step": 528.0,
+              "reward": 0.0234375,
+              "entropy": 11.893359184265137
+            },
+            {
+              "gradient_step": 532.0,
+              "reward": 0.02734375,
+              "entropy": 11.999069213867188
+            },
+            {
+              "gradient_step": 536.0,
+              "reward": 0.03515625,
+              "entropy": 11.980175018310547
+            },
+            {
+              "gradient_step": 540.0,
+              "reward": 0.01171875,
+              "entropy": 12.10622787475586
+            },
+            {
+              "gradient_step": 544.0,
+              "reward": 0.015625,
+              "entropy": 12.098456382751465
+            },
+            {
+              "gradient_step": 548.0,
+              "reward": 0.0,
+              "entropy": 12.100278854370117
+            },
+            {
+              "gradient_step": 552.0,
+              "reward": 0.05078125,
+              "entropy": 12.027549743652344
+            },
+            {
+              "gradient_step": 556.0,
+              "reward": 0.03125,
+              "entropy": 12.013684272766113
+            },
+            {
+              "gradient_step": 560.0,
+              "reward": 0.0234375,
+              "entropy": 12.03826904296875
+            },
+            {
+              "gradient_step": 564.0,
+              "reward": 0.03125,
+              "entropy": 11.995100021362305
+            },
+            {
+              "gradient_step": 568.0,
+              "reward": 0.01171875,
+              "entropy": 12.06251049041748
+            },
+            {
+              "gradient_step": 572.0,
+              "reward": 0.0,
+              "entropy": 12.12740707397461
+            },
+            {
+              "gradient_step": 576.0,
+              "reward": 0.0078125,
+              "entropy": 12.102469444274902
+            },
+            {
+              "gradient_step": 580.0,
+              "reward": 0.01953125,
+              "entropy": 12.056899070739746
+            },
+            {
+              "gradient_step": 584.0,
+              "reward": 0.0,
+              "entropy": 12.164189338684082
+            },
+            {
+              "gradient_step": 588.0,
+              "reward": 0.01171875,
+              "entropy": 12.148539543151855
+            },
+            {
+              "gradient_step": 592.0,
+              "reward": 0.0,
+              "entropy": 12.143081665039062
+            },
+            {
+              "gradient_step": 596.0,
+              "reward": 0.01171875,
+              "entropy": 12.123623847961426
+            },
+            {
+              "gradient_step": 600.0,
+              "reward": 0.0,
+              "entropy": 12.181373596191406
+            }
+          ]
+        },
+        "upper": {
+          "run_id": "ou6gb57a",
+          "source_csv": "neurips_2026/rlvr_entropy_control_overleaf/plots/entropy-filtering-reward-entropy/data/numina-gemma-upper.csv",
+          "source_sha256": "470e2b4c8f93efb6016c5cc0f220a090911b94c78cd949fcfae3bd59957c193c",
+          "values": [
+            {
+              "gradient_step": 0.0,
+              "reward": 0.07421875,
+              "entropy": 0.1545008420944214
+            },
+            {
+              "gradient_step": 4.0,
+              "reward": 0.08203125,
+              "entropy": 0.18801158666610718
+            },
+            {
+              "gradient_step": 8.0,
+              "reward": 0.1328125,
+              "entropy": 0.15252389013767242
+            },
+            {
+              "gradient_step": 12.0,
+              "reward": 0.18359375,
+              "entropy": 0.19000078737735748
+            },
+            {
+              "gradient_step": 16.0,
+              "reward": 0.05859375,
+              "entropy": 0.16484902799129486
+            },
+            {
+              "gradient_step": 20.0,
+              "reward": 0.23046875,
+              "entropy": 0.17055454850196838
+            },
+            {
+              "gradient_step": 24.0,
+              "reward": 0.1875,
+              "entropy": 0.17612658441066742
+            },
+            {
+              "gradient_step": 28.0,
+              "reward": 0.24609375,
+              "entropy": 0.1791156381368637
+            },
+            {
+              "gradient_step": 32.0,
+              "reward": 0.4375,
+              "entropy": 0.14952963590621948
+            },
+            {
+              "gradient_step": 36.0,
+              "reward": 0.1875,
+              "entropy": 0.14371274411678314
+            },
+            {
+              "gradient_step": 40.0,
+              "reward": 0.25390625,
+              "entropy": 0.146913543343544
+            },
+            {
+              "gradient_step": 44.0,
+              "reward": 0.37109375,
+              "entropy": 0.1405555009841919
+            },
+            {
+              "gradient_step": 48.0,
+              "reward": 0.234375,
+              "entropy": 0.1435401290655136
+            },
+            {
+              "gradient_step": 52.0,
+              "reward": 0.27734375,
+              "entropy": 0.1552252322435379
+            },
+            {
+              "gradient_step": 56.0,
+              "reward": 0.29296875,
+              "entropy": 0.1619148999452591
+            },
+            {
+              "gradient_step": 60.0,
+              "reward": 0.29296875,
+              "entropy": 0.1372770369052887
+            },
+            {
+              "gradient_step": 64.0,
+              "reward": 0.2578125,
+              "entropy": 0.15344089269638062
+            },
+            {
+              "gradient_step": 68.0,
+              "reward": 0.41015625,
+              "entropy": 0.15600751340389252
+            },
+            {
+              "gradient_step": 72.0,
+              "reward": 0.328125,
+              "entropy": 0.12602540850639343
+            },
+            {
+              "gradient_step": 76.0,
+              "reward": 0.296875,
+              "entropy": 0.14362947642803192
+            },
+            {
+              "gradient_step": 80.0,
+              "reward": 0.30859375,
+              "entropy": 0.15284818410873413
+            },
+            {
+              "gradient_step": 84.0,
+              "reward": 0.37890625,
+              "entropy": 0.14046190679073334
+            },
+            {
+              "gradient_step": 88.0,
+              "reward": 0.38671875,
+              "entropy": 0.12044822424650192
+            },
+            {
+              "gradient_step": 92.0,
+              "reward": 0.25,
+              "entropy": 0.11176932603120804
+            },
+            {
+              "gradient_step": 96.0,
+              "reward": 0.27734375,
+              "entropy": 0.13804589211940765
+            },
+            {
+              "gradient_step": 100.0,
+              "reward": 0.40625,
+              "entropy": 0.1082339733839035
+            },
+            {
+              "gradient_step": 104.0,
+              "reward": 0.51171875,
+              "entropy": 0.13481122255325317
+            },
+            {
+              "gradient_step": 108.0,
+              "reward": 0.25,
+              "entropy": 0.14071597158908844
+            },
+            {
+              "gradient_step": 112.0,
+              "reward": 0.47265625,
+              "entropy": 0.10518573224544525
+            },
+            {
+              "gradient_step": 116.0,
+              "reward": 0.34765625,
+              "entropy": 0.11963178962469101
+            },
+            {
+              "gradient_step": 120.0,
+              "reward": 0.453125,
+              "entropy": 0.10322939604520798
+            },
+            {
+              "gradient_step": 124.0,
+              "reward": 0.29296875,
+              "entropy": 0.10275454074144363
+            },
+            {
+              "gradient_step": 128.0,
+              "reward": 0.47265625,
+              "entropy": 0.09867797791957855
+            },
+            {
+              "gradient_step": 132.0,
+              "reward": 0.33203125,
+              "entropy": 0.08865410834550858
+            },
+            {
+              "gradient_step": 136.0,
+              "reward": 0.33984375,
+              "entropy": 0.09521695971488953
+            },
+            {
+              "gradient_step": 140.0,
+              "reward": 0.46484375,
+              "entropy": 0.08141516149044037
+            },
+            {
+              "gradient_step": 144.0,
+              "reward": 0.40234375,
+              "entropy": 0.09204613417387009
+            },
+            {
+              "gradient_step": 148.0,
+              "reward": 0.39453125,
+              "entropy": 0.08693913370370865
+            },
+            {
+              "gradient_step": 152.0,
+              "reward": 0.40234375,
+              "entropy": 0.07780786603689194
+            },
+            {
+              "gradient_step": 156.0,
+              "reward": 0.26953125,
+              "entropy": 0.10931235551834106
+            },
+            {
+              "gradient_step": 160.0,
+              "reward": 0.36328125,
+              "entropy": 0.08384956419467926
+            },
+            {
+              "gradient_step": 164.0,
+              "reward": 0.47265625,
+              "entropy": 0.08193966746330261
+            },
+            {
+              "gradient_step": 168.0,
+              "reward": 0.4375,
+              "entropy": 0.07688011974096298
+            },
+            {
+              "gradient_step": 172.0,
+              "reward": 0.35546875,
+              "entropy": 0.09398269653320312
+            },
+            {
+              "gradient_step": 176.0,
+              "reward": 0.33984375,
+              "entropy": 0.08283006399869919
+            },
+            {
+              "gradient_step": 180.0,
+              "reward": 0.3984375,
+              "entropy": 0.0873536616563797
+            },
+            {
+              "gradient_step": 184.0,
+              "reward": 0.34765625,
+              "entropy": 0.08961323648691177
+            },
+            {
+              "gradient_step": 188.0,
+              "reward": 0.55078125,
+              "entropy": 0.07986970990896225
+            },
+            {
+              "gradient_step": 192.0,
+              "reward": 0.3125,
+              "entropy": 0.09368019551038742
+            },
+            {
+              "gradient_step": 196.0,
+              "reward": 0.3515625,
+              "entropy": 0.0933520570397377
+            },
+            {
+              "gradient_step": 200.0,
+              "reward": 0.34765625,
+              "entropy": 0.07788713276386261
+            },
+            {
+              "gradient_step": 204.0,
+              "reward": 0.34375,
+              "entropy": 0.07940860092639923
+            },
+            {
+              "gradient_step": 208.0,
+              "reward": 0.49609375,
+              "entropy": 0.07577770948410034
+            },
+            {
+              "gradient_step": 212.0,
+              "reward": 0.4140625,
+              "entropy": 0.06622418016195297
+            },
+            {
+              "gradient_step": 216.0,
+              "reward": 0.44921875,
+              "entropy": 0.0791533887386322
+            },
+            {
+              "gradient_step": 220.0,
+              "reward": 0.23828125,
+              "entropy": 0.09325569123029709
+            },
+            {
+              "gradient_step": 224.0,
+              "reward": 0.37109375,
+              "entropy": 0.08171305805444717
+            },
+            {
+              "gradient_step": 228.0,
+              "reward": 0.46484375,
+              "entropy": 0.0772869735956192
+            },
+            {
+              "gradient_step": 232.0,
+              "reward": 0.36328125,
+              "entropy": 0.07780829071998596
+            },
+            {
+              "gradient_step": 236.0,
+              "reward": 0.50390625,
+              "entropy": 0.07521692663431168
+            },
+            {
+              "gradient_step": 240.0,
+              "reward": 0.30078125,
+              "entropy": 0.07596929371356964
+            },
+            {
+              "gradient_step": 244.0,
+              "reward": 0.41015625,
+              "entropy": 0.06410780549049377
+            },
+            {
+              "gradient_step": 248.0,
+              "reward": 0.4140625,
+              "entropy": 0.05943240597844124
+            },
+            {
+              "gradient_step": 252.0,
+              "reward": 0.46875,
+              "entropy": 0.07839459925889969
+            },
+            {
+              "gradient_step": 256.0,
+              "reward": 0.34765625,
+              "entropy": 0.0844414234161377
+            },
+            {
+              "gradient_step": 260.0,
+              "reward": 0.49609375,
+              "entropy": 0.06974416971206665
+            },
+            {
+              "gradient_step": 264.0,
+              "reward": 0.18359375,
+              "entropy": 0.07216115295886993
+            },
+            {
+              "gradient_step": 268.0,
+              "reward": 0.3828125,
+              "entropy": 0.06961078196763992
+            },
+            {
+              "gradient_step": 272.0,
+              "reward": 0.38671875,
+              "entropy": 0.075912244617939
+            },
+            {
+              "gradient_step": 276.0,
+              "reward": 0.34375,
+              "entropy": 0.07266858220100403
+            },
+            {
+              "gradient_step": 280.0,
+              "reward": 0.328125,
+              "entropy": 0.06553773581981659
+            },
+            {
+              "gradient_step": 284.0,
+              "reward": 0.36328125,
+              "entropy": 0.06791999936103821
+            },
+            {
+              "gradient_step": 288.0,
+              "reward": 0.375,
+              "entropy": 0.06995593756437302
+            },
+            {
+              "gradient_step": 292.0,
+              "reward": 0.40625,
+              "entropy": 0.061665069311857224
+            },
+            {
+              "gradient_step": 296.0,
+              "reward": 0.37109375,
+              "entropy": 0.061411574482917786
+            },
+            {
+              "gradient_step": 300.0,
+              "reward": 0.44140625,
+              "entropy": 0.05798976495862007
+            },
+            {
+              "gradient_step": 304.0,
+              "reward": 0.375,
+              "entropy": 0.06323540210723877
+            },
+            {
+              "gradient_step": 308.0,
+              "reward": 0.3359375,
+              "entropy": 0.0691206157207489
+            },
+            {
+              "gradient_step": 312.0,
+              "reward": 0.19140625,
+              "entropy": 0.06913837790489197
+            },
+            {
+              "gradient_step": 316.0,
+              "reward": 0.39453125,
+              "entropy": 0.06454788893461227
+            },
+            {
+              "gradient_step": 320.0,
+              "reward": 0.3828125,
+              "entropy": 0.053612153977155685
+            },
+            {
+              "gradient_step": 324.0,
+              "reward": 0.375,
+              "entropy": 0.05769340693950653
+            },
+            {
+              "gradient_step": 328.0,
+              "reward": 0.3125,
+              "entropy": 0.06570244580507278
+            },
+            {
+              "gradient_step": 332.0,
+              "reward": 0.5,
+              "entropy": 0.06889474391937256
+            },
+            {
+              "gradient_step": 336.0,
+              "reward": 0.5,
+              "entropy": 0.05457882210612297
+            },
+            {
+              "gradient_step": 340.0,
+              "reward": 0.4375,
+              "entropy": 0.056732989847660065
+            },
+            {
+              "gradient_step": 344.0,
+              "reward": 0.51171875,
+              "entropy": 0.055627334862947464
+            },
+            {
+              "gradient_step": 348.0,
+              "reward": 0.37890625,
+              "entropy": 0.06533420830965042
+            },
+            {
+              "gradient_step": 352.0,
+              "reward": 0.41796875,
+              "entropy": 0.05593805015087128
+            },
+            {
+              "gradient_step": 356.0,
+              "reward": 0.51171875,
+              "entropy": 0.07448425889015198
+            },
+            {
+              "gradient_step": 360.0,
+              "reward": 0.38671875,
+              "entropy": 0.055090125650167465
+            },
+            {
+              "gradient_step": 364.0,
+              "reward": 0.3984375,
+              "entropy": 0.07560448348522186
+            },
+            {
+              "gradient_step": 368.0,
+              "reward": 0.36328125,
+              "entropy": 0.0657278522849083
+            },
+            {
+              "gradient_step": 372.0,
+              "reward": 0.36328125,
+              "entropy": 0.06452026963233948
+            },
+            {
+              "gradient_step": 376.0,
+              "reward": 0.4296875,
+              "entropy": 0.05665087327361107
+            },
+            {
+              "gradient_step": 380.0,
+              "reward": 0.46875,
+              "entropy": 0.05688883736729622
+            },
+            {
+              "gradient_step": 384.0,
+              "reward": 0.3984375,
+              "entropy": 0.05609254911541939
+            },
+            {
+              "gradient_step": 388.0,
+              "reward": 0.32421875,
+              "entropy": 0.06084481626749039
+            },
+            {
+              "gradient_step": 392.0,
+              "reward": 0.34765625,
+              "entropy": 0.057692449539899826
+            },
+            {
+              "gradient_step": 396.0,
+              "reward": 0.47265625,
+              "entropy": 0.05418168008327484
+            },
+            {
+              "gradient_step": 400.0,
+              "reward": 0.484375,
+              "entropy": 0.05260266363620758
+            },
+            {
+              "gradient_step": 404.0,
+              "reward": 0.34765625,
+              "entropy": 0.06951092183589935
+            },
+            {
+              "gradient_step": 408.0,
+              "reward": 0.4296875,
+              "entropy": 0.06224944069981575
+            },
+            {
+              "gradient_step": 412.0,
+              "reward": 0.43359375,
+              "entropy": 0.0536990761756897
+            },
+            {
+              "gradient_step": 416.0,
+              "reward": 0.34375,
+              "entropy": 0.060754597187042236
+            },
+            {
+              "gradient_step": 420.0,
+              "reward": 0.4453125,
+              "entropy": 0.055717311799526215
+            },
+            {
+              "gradient_step": 424.0,
+              "reward": 0.30859375,
+              "entropy": 0.05542374029755592
+            },
+            {
+              "gradient_step": 428.0,
+              "reward": 0.3984375,
+              "entropy": 0.054247286170721054
+            },
+            {
+              "gradient_step": 432.0,
+              "reward": 0.3671875,
+              "entropy": 0.05409100651741028
+            },
+            {
+              "gradient_step": 436.0,
+              "reward": 0.3046875,
+              "entropy": 0.06350143253803253
+            },
+            {
+              "gradient_step": 440.0,
+              "reward": 0.4765625,
+              "entropy": 0.0567750409245491
+            },
+            {
+              "gradient_step": 444.0,
+              "reward": 0.38671875,
+              "entropy": 0.06350362300872803
+            },
+            {
+              "gradient_step": 448.0,
+              "reward": 0.42578125,
+              "entropy": 0.0598127618432045
+            },
+            {
+              "gradient_step": 452.0,
+              "reward": 0.40234375,
+              "entropy": 0.058542340993881226
+            },
+            {
+              "gradient_step": 456.0,
+              "reward": 0.4296875,
+              "entropy": 0.0591646283864975
+            },
+            {
+              "gradient_step": 460.0,
+              "reward": 0.359375,
+              "entropy": 0.05545405298471451
+            },
+            {
+              "gradient_step": 464.0,
+              "reward": 0.3359375,
+              "entropy": 0.05931491032242775
+            },
+            {
+              "gradient_step": 468.0,
+              "reward": 0.34765625,
+              "entropy": 0.06483353674411774
+            },
+            {
+              "gradient_step": 472.0,
+              "reward": 0.44140625,
+              "entropy": 0.05809309333562851
+            },
+            {
+              "gradient_step": 476.0,
+              "reward": 0.50390625,
+              "entropy": 0.056682392954826355
+            },
+            {
+              "gradient_step": 480.0,
+              "reward": 0.34375,
+              "entropy": 0.06220404431223869
+            },
+            {
+              "gradient_step": 484.0,
+              "reward": 0.4140625,
+              "entropy": 0.0575171560049057
+            },
+            {
+              "gradient_step": 488.0,
+              "reward": 0.20703125,
+              "entropy": 0.05484558269381523
+            },
+            {
+              "gradient_step": 492.0,
+              "reward": 0.3984375,
+              "entropy": 0.05940546840429306
+            },
+            {
+              "gradient_step": 496.0,
+              "reward": 0.45703125,
+              "entropy": 0.050296660512685776
+            },
+            {
+              "gradient_step": 500.0,
+              "reward": 0.29296875,
+              "entropy": 0.06109950691461563
+            },
+            {
+              "gradient_step": 504.0,
+              "reward": 0.53125,
+              "entropy": 0.05736721307039261
+            },
+            {
+              "gradient_step": 508.0,
+              "reward": 0.5078125,
+              "entropy": 0.056354980915784836
+            },
+            {
+              "gradient_step": 512.0,
+              "reward": 0.42578125,
+              "entropy": 0.06060803309082985
+            },
+            {
+              "gradient_step": 516.0,
+              "reward": 0.46484375,
+              "entropy": 0.06162850931286812
+            },
+            {
+              "gradient_step": 520.0,
+              "reward": 0.48046875,
+              "entropy": 0.05883854627609253
+            },
+            {
+              "gradient_step": 524.0,
+              "reward": 0.4921875,
+              "entropy": 0.058723099529743195
+            },
+            {
+              "gradient_step": 528.0,
+              "reward": 0.49609375,
+              "entropy": 0.058654285967350006
+            },
+            {
+              "gradient_step": 532.0,
+              "reward": 0.34765625,
+              "entropy": 0.06556866317987442
+            },
+            {
+              "gradient_step": 536.0,
+              "reward": 0.3984375,
+              "entropy": 0.05703536793589592
+            },
+            {
+              "gradient_step": 540.0,
+              "reward": 0.34765625,
+              "entropy": 0.05451836809515953
+            },
+            {
+              "gradient_step": 544.0,
+              "reward": 0.5546875,
+              "entropy": 0.05483148992061615
+            },
+            {
+              "gradient_step": 548.0,
+              "reward": 0.33984375,
+              "entropy": 0.050394922494888306
+            },
+            {
+              "gradient_step": 552.0,
+              "reward": 0.3515625,
+              "entropy": 0.05651479586958885
+            },
+            {
+              "gradient_step": 556.0,
+              "reward": 0.296875,
+              "entropy": 0.06484142690896988
+            },
+            {
+              "gradient_step": 560.0,
+              "reward": 0.3828125,
+              "entropy": 0.05430904030799866
+            },
+            {
+              "gradient_step": 564.0,
+              "reward": 0.4453125,
+              "entropy": 0.05864949896931648
+            },
+            {
+              "gradient_step": 568.0,
+              "reward": 0.35546875,
+              "entropy": 0.059031009674072266
+            },
+            {
+              "gradient_step": 572.0,
+              "reward": 0.296875,
+              "entropy": 0.053832538425922394
+            },
+            {
+              "gradient_step": 576.0,
+              "reward": 0.390625,
+              "entropy": 0.06156724691390991
+            },
+            {
+              "gradient_step": 580.0,
+              "reward": 0.453125,
+              "entropy": 0.05087671056389809
+            },
+            {
+              "gradient_step": 584.0,
+              "reward": 0.3125,
+              "entropy": 0.04774998873472214
+            },
+            {
+              "gradient_step": 588.0,
+              "reward": 0.37109375,
+              "entropy": 0.05525679141283035
+            },
+            {
+              "gradient_step": 592.0,
+              "reward": 0.35546875,
+              "entropy": 0.0506020151078701
+            },
+            {
+              "gradient_step": 596.0,
+              "reward": 0.2890625,
+              "entropy": 0.0639113187789917
+            },
+            {
+              "gradient_step": 600.0,
+              "reward": 0.33984375,
+              "entropy": 0.05607108399271965
+            }
+          ]
+        },
+        "two-sided": {
+          "run_id": "ghv2o7su",
+          "source_csv": "neurips_2026/rlvr_entropy_control_overleaf/plots/entropy-filtering-reward-entropy/data/numina-gemma-two-sided.csv",
+          "source_sha256": "7117c95a726c3f1872ed4294230d81ca2ee7d57a53ed280f21c74480ff5237a8",
+          "values": [
+            {
+              "gradient_step": 0.0,
+              "reward": 0.08203125,
+              "entropy": 0.14545080065727234
+            },
+            {
+              "gradient_step": 4.0,
+              "reward": 0.1015625,
+              "entropy": 0.19240230321884155
+            },
+            {
+              "gradient_step": 8.0,
+              "reward": 0.171875,
+              "entropy": 0.1491345763206482
+            },
+            {
+              "gradient_step": 12.0,
+              "reward": 0.171875,
+              "entropy": 0.19418364763259888
+            },
+            {
+              "gradient_step": 16.0,
+              "reward": 0.04296875,
+              "entropy": 0.17201925814151764
+            },
+            {
+              "gradient_step": 20.0,
+              "reward": 0.1796875,
+              "entropy": 0.1944696009159088
+            },
+            {
+              "gradient_step": 24.0,
+              "reward": 0.18359375,
+              "entropy": 0.20778049528598785
+            },
+            {
+              "gradient_step": 28.0,
+              "reward": 0.234375,
+              "entropy": 0.21989122033119202
+            },
+            {
+              "gradient_step": 32.0,
+              "reward": 0.39453125,
+              "entropy": 0.2014034241437912
+            },
+            {
+              "gradient_step": 36.0,
+              "reward": 0.17578125,
+              "entropy": 0.20251114666461945
+            },
+            {
+              "gradient_step": 40.0,
+              "reward": 0.27734375,
+              "entropy": 0.2497721165418625
+            },
+            {
+              "gradient_step": 44.0,
+              "reward": 0.39453125,
+              "entropy": 0.24199646711349487
+            },
+            {
+              "gradient_step": 48.0,
+              "reward": 0.21484375,
+              "entropy": 0.3161700665950775
+            },
+            {
+              "gradient_step": 52.0,
+              "reward": 0.30078125,
+              "entropy": 0.41620373725891113
+            },
+            {
+              "gradient_step": 56.0,
+              "reward": 0.2890625,
+              "entropy": 0.5602140426635742
+            },
+            {
+              "gradient_step": 60.0,
+              "reward": 0.2265625,
+              "entropy": 0.7840404510498047
+            },
+            {
+              "gradient_step": 64.0,
+              "reward": 0.171875,
+              "entropy": 1.275364875793457
+            },
+            {
+              "gradient_step": 68.0,
+              "reward": 0.18359375,
+              "entropy": 2.035264015197754
+            },
+            {
+              "gradient_step": 72.0,
+              "reward": 0.01953125,
+              "entropy": 2.8236122131347656
+            },
+            {
+              "gradient_step": 76.0,
+              "reward": 0.0234375,
+              "entropy": 3.5426504611968994
+            },
+            {
+              "gradient_step": 80.0,
+              "reward": 0.0,
+              "entropy": 4.1136369705200195
+            },
+            {
+              "gradient_step": 84.0,
+              "reward": 0.0,
+              "entropy": 4.437305927276611
+            },
+            {
+              "gradient_step": 88.0,
+              "reward": 0.00390625,
+              "entropy": 4.634744644165039
+            },
+            {
+              "gradient_step": 92.0,
+              "reward": 0.00390625,
+              "entropy": 4.796952247619629
+            },
+            {
+              "gradient_step": 96.0,
+              "reward": 0.0078125,
+              "entropy": 4.892661094665527
+            },
+            {
+              "gradient_step": 100.0,
+              "reward": 0.00390625,
+              "entropy": 5.154162883758545
+            },
+            {
+              "gradient_step": 104.0,
+              "reward": 0.00390625,
+              "entropy": 5.300504684448242
+            },
+            {
+              "gradient_step": 108.0,
+              "reward": 0.0,
+              "entropy": 5.49471378326416
+            },
+            {
+              "gradient_step": 112.0,
+              "reward": 0.0,
+              "entropy": 5.630606174468994
+            },
+            {
+              "gradient_step": 116.0,
+              "reward": 0.0,
+              "entropy": 5.6711554527282715
+            },
+            {
+              "gradient_step": 120.0,
+              "reward": 0.0,
+              "entropy": 5.775866508483887
+            },
+            {
+              "gradient_step": 124.0,
+              "reward": 0.0,
+              "entropy": 5.796348571777344
+            },
+            {
+              "gradient_step": 128.0,
+              "reward": 0.0,
+              "entropy": 5.872781276702881
+            },
+            {
+              "gradient_step": 132.0,
+              "reward": 0.0,
+              "entropy": 5.895962715148926
+            },
+            {
+              "gradient_step": 136.0,
+              "reward": 0.0078125,
+              "entropy": 5.908084392547607
+            },
+            {
+              "gradient_step": 140.0,
+              "reward": 0.0,
+              "entropy": 6.057810306549072
+            },
+            {
+              "gradient_step": 144.0,
+              "reward": 0.0,
+              "entropy": 6.189589500427246
+            },
+            {
+              "gradient_step": 148.0,
+              "reward": 0.0,
+              "entropy": 6.229395866394043
+            },
+            {
+              "gradient_step": 152.0,
+              "reward": 0.0,
+              "entropy": 6.224350929260254
+            },
+            {
+              "gradient_step": 156.0,
+              "reward": 0.0,
+              "entropy": 6.229673862457275
+            },
+            {
+              "gradient_step": 160.0,
+              "reward": 0.0,
+              "entropy": 6.229442596435547
+            },
+            {
+              "gradient_step": 164.0,
+              "reward": 0.0,
+              "entropy": 6.244869232177734
+            },
+            {
+              "gradient_step": 168.0,
+              "reward": 0.0,
+              "entropy": 6.242332458496094
+            },
+            {
+              "gradient_step": 172.0,
+              "reward": 0.0,
+              "entropy": 6.2381415367126465
+            },
+            {
+              "gradient_step": 176.0,
+              "reward": 0.0,
+              "entropy": 6.229256629943848
+            },
+            {
+              "gradient_step": 180.0,
+              "reward": 0.0,
+              "entropy": 6.194484710693359
+            },
+            {
+              "gradient_step": 184.0,
+              "reward": 0.0,
+              "entropy": 6.238597393035889
+            },
+            {
+              "gradient_step": 188.0,
+              "reward": 0.0,
+              "entropy": 6.212646484375
+            },
+            {
+              "gradient_step": 192.0,
+              "reward": 0.0,
+              "entropy": 6.219005107879639
+            },
+            {
+              "gradient_step": 196.0,
+              "reward": 0.0,
+              "entropy": 6.211092472076416
+            },
+            {
+              "gradient_step": 200.0,
+              "reward": 0.0,
+              "entropy": 6.233363628387451
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

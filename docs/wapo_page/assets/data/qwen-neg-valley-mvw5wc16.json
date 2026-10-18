@@ -1,0 +1,29 @@
+{
+  "run_id": "mvw5wc16",
+  "name": "numina_lean_math-qwen4b-256-64-8-drdapo-neg_val-ent_thresh_0",
+  "source": "verifiers/wandb/run-20261016_114651-mvw5wc16/run-mvw5wc16.wandb",
+  "url": "https://forge.coreweave.com/wandb/yssprashanth65536-student/huggingface/runs/mvw5wc16",
+  "records": 60,
+  "source_records": 120,
+  "step_limit": 60,
+  "smoothing_window": 1,
+  "config": {
+    "learning_rate": 1e-05,
+    "loss_type": "dr_dapo",
+    "normalize_advantages_by_std": null,
+    "mask_ratio_low": 0.1,
+    "mask_ratio_high": 10.0,
+    "mask_env_responses": true,
+    "mask_truncated_completions": false,
+    "mask_negative_advantages": false,
+    "mask_positive_advantages": false,
+    "valley_mass_threshold": [
+      0.0,
+      1.0
+    ],
+    "valley_mass_threshold_sign": null,
+    "peak_valley_weightage": null,
+    "mask_low_entropy_fraction": null,
+    "mask_random_kept_fraction": null
+  }
+}

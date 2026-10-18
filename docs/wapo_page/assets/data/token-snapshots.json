@@ -1,0 +1,29 @@
+[
+  {
+    "run": "numina_lean_math-smol3b-256_64_8-drdapo-pos_peak",
+    "source": "rl_logs/plots/numina_lean_math-smol3b-256_64_8-drdapo-pos_peak/data/scatter_step_0.npz",
+    "step": 0,
+    "tokens": 817574,
+    "peaks": 701858,
+    "valleys": 115716,
+    "peak_percent": 85.84641879511824
+  },
+  {
+    "run": "numina_lean_math-qwen4b-256-64-8-drdapo",
+    "source": "rl_logs/plots/numina_lean_math-qwen4b-256-64-8-drdapo/data/scatter_step_0.npz",
+    "step": 0,
+    "tokens": 10000,
+    "peaks": 9253,
+    "valleys": 747,
+    "peak_percent": 92.53
+  },
+  {
+    "run": "numina-gemma-256-64-8-drdapo-neg_val-ent_thresh_neg01",
+    "source": "rl_logs/plots/numina-gemma-256-64-8-drdapo-neg_val-ent_thresh_neg01/data/scatter_step_0.npz",
+    "step": 0,
+    "tokens": 10000,
+    "peaks": 9518,
+    "valleys": 482,
+    "peak_percent": 95.18
+  }
+]
