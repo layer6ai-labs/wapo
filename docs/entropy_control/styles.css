@@ -61,10 +61,9 @@ h1 em { font-weight: 400; }
 article { min-width: 0; }
 p { margin: 0 0 22px; }
 strong { font-weight: 650; }
-h2 { font: 400 clamp(32px, 3.4vw, 44px)/1.17 var(--serif); letter-spacing: -1.3px; margin: 0 0 27px; }
+h2 { color: var(--accent); font: 400 clamp(32px, 3.4vw, 44px)/1.17 var(--serif); letter-spacing: -1.3px; margin: 0 0 27px; }
 h3 { font: 400 27px/1.2 var(--serif); margin: 0 0 17px; letter-spacing: -.5px; }
 .chapter { border-top: 1px solid var(--line); padding-top: 40px; margin-top: 60px; }
-.chapter-label { font-size: 12px; color: var(--accent); letter-spacing: .12em; font-weight: 600; margin-bottom: 17px; }
 .inline-math { font: 1.12em var(--serif); }
 sub, sup { font-size: .67em; line-height: 0; }
 figure { border: 1px solid var(--line); border-radius: 5px; margin: 30px 0; padding: 16px; background: var(--surface); }

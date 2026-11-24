@@ -47,8 +47,8 @@
     <article>
       <section id="overview" class="overview" aria-labelledby="overview-title">
         <h2 id="overview-title">Overview</h2>
-        <p>Reinforcement learning with verifiable rewards (RLVR) can improve a language model’s reasoning while remaining susceptible to training collapse. In the collapse-prone runs we study, reward falls as policy entropy rises sharply. A local, first-order approximation of entropy change follows the same qualitative trend before collapse. We use this signal to control the updates directly from the trainer side, without modeling the rollout policy.</p>
-        <p><strong>Removing updates with large predicted entropy increases stabilizes all four settings over the plotted training horizon.</strong> Additionally removing entropy-decreasing updates has the opposite effect: entropy rises sooner and training collapses earlier.</p>
+        <p>Reinforcement learning with verifiable rewards (RLVR) can improve a language model’s reasoning while remaining susceptible to training collapse. In the collapse-prone runs we study, reward falls as policy entropy rises sharply. A local, first-order approximation of entropy change (<span class="math-widehat">ΔH</span>) follows the same qualitative trend. We use this signal to control the updates directly from the trainer side, without modeling the rollout policy.</p>
+        <p><strong>Removing updates with large positive <span class="math-widehat">ΔH</span> stabilizes all four settings over the plotted training horizon.</strong> Additionally removing entropy-decreasing updates has the opposite effect: entropy rises sooner and training collapses earlier.</p>
         <figure id="main-result">
           <a class="figure-link" href="assets/figures/thresholds.svg" target="_blank" rel="noreferrer" aria-label="Open all four threshold experiments at full size">
             <picture><source media="(max-width: 650px)" srcset="assets/figures/thresholds-mobile.svg"><img src="assets/figures/thresholds.svg" width="1400" height="750" fetchpriority="high" alt="Reward and trainer entropy in four DAPO settings. The one-sided filter preserves reward and controls entropy, while the two-sided filter collapses earlier than the baseline."></picture>
@@ -58,14 +58,14 @@
       </section>
 
       <section id="background" class="chapter" aria-labelledby="background-title">
-        <p class="chapter-label" id="background-title">CURRENT VIEWS ON INSTABILITY</p>
+        <h2 id="background-title">CURRENT VIEWS ON INSTABILITY</h2>
         <p>Much of the work on RLVR instability starts from a mismatch between the expected reward under the current policy and the surrogate objective optimized using older rollouts. Reusing samples across gradient steps creates policy lag. Differences between training and inference engines introduce another mismatch. Importance-ratio corrections, clipping, gradient-alignment methods, and improved numerical consistency aim to control these effects. They improve stability in some settings, but do not consistently prevent collapse. Removing policy lag or enforcing closer training–inference agreement can also trade away efficiency, particularly when rollout generation and training could otherwise overlap.</p>
         <p>A related approach constrains how far the policy moves from a reference, using KL regularization or a similar loss. The reference may be the initial model, a recent rollout policy, or a moving average. Appropriately configured KL regularization can consistently stabilize asynchronous RL. However, this comparison can add cost: a separate reference may require another forward pass, while full-distribution comparisons against the rollout policy require storing or recomputing vocabulary-level probabilities.</p>
-        <p>We extend the gradient perspective introduced in our <a href="../wapo_page/">recent work</a>: how does an update change the local token distribution? Here, we estimate its effect on entropy using a <strong>closed-form, first-order expression</strong> computed from the trainer’s current distribution and the quantities already used in the policy-gradient loss. Computing the estimate requires no additional backpropagation, rollout-policy model, or saved rollout logits. It still uses the usual sampled-token importance ratio; the additional computation consists of reductions over the trainer distribution. We hope this work makes the gradient view a compelling perspective for stabilization in environments where staleness is unavoidable.</p>
+        <p>We take an alternative approach and extend the <a href="../wapo_page/">gradient perspective</a>. We estimate an update’s effect on entropy using a <strong>closed-form, first-order expression</strong> computed from the trainer’s current distribution. These quantities are already used in the policy-gradient loss. Computing the estimate requires no additional backpropagation, rollout-policy model, or saved rollout logits. It still uses the usual sampled-token importance ratio; the additional computation consists of reductions over the trainer distribution. We hope this work makes the gradient view a compelling perspective for stabilization in environments where staleness is unavoidable.</p>
       </section>
 
       <section id="collapse" class="chapter" aria-labelledby="collapse-title">
-        <h2 id="collapse-title">Entropy growth accompanies collapse.</h2>
+        <h2 id="collapse-title">Entropy growth accompanies collapse</h2>
         <p>For a next-token distribution <span class="inline-math">p</span>, entropy <span class="inline-math">H(p) = −∑<sub>j</sub> p<sub>j</sub> log p<sub>j</sub></span> measures how concentrated the prediction is over the vocabulary. Higher entropy means that probability mass is less concentrated among likely next tokens.</p>
         <p>We measure entropy under the <em>current trainer policy</em>, on contexts generated by the rollout policy, and average over sampled token positions. Across the four baseline runs below, a sharp increase accompanies reward collapse. These settings span multi-turn question answering and single-turn mathematics, two model families, and different clipping configurations.</p>
         <figure>
@@ -77,7 +77,7 @@
       </section>
 
       <section id="estimate" class="chapter" aria-labelledby="estimate-title">
-        <h2 id="estimate-title">First-order entropy change tracks training entropy.</h2>
+        <h2 id="estimate-title">First-order entropy change tracks training entropy</h2>
         <p>Let <span class="inline-math">p<sub>s</sub></span> be the trainer’s probability for the sampled token, <span class="inline-math">A</span> its advantage, and <span class="inline-math">ρ<sub>s</sub></span> its trainer-to-rollout importance ratio. For a token whose unclipped policy-gradient surrogate is active, a local logit step of size <span class="inline-math">η</span> gives the first-order entropy-change estimate:</p>
         <div class="equation" role="math" aria-label="Predicted entropy change equals minus eta times rho s times A, multiplied by p s log p s minus the sum over j of p j squared log p j, plus entropy H of p times p s minus the sum over j of p j squared.">
           <span><span class="math-widehat">ΔH</span> = −η ρ<sub>s</sub> A [ p<sub>s</sub> log p<sub>s</sub> − ∑<sub>j</sub> p<sub>j</sub>² log p<sub>j</sub> + H(p)(p<sub>s</sub> − ∑<sub>j</sub> p<sub>j</sub>²) ]</span>
@@ -88,7 +88,7 @@
       </section>
 
       <section id="control" class="chapter" aria-labelledby="control-title">
-        <p class="chapter-label" id="control-title">INTERVENE ON THE DIRECTION</p>
+        <h2 id="control-title">INTERVENE ON THE DIRECTION</h2>
         <p>We choose a collapse-prone DAPO configuration for each model–dataset pair and compare it with two token filters. All runs use four policy updates per rollout batch, so policy lag remains present. For filtering, we omit the learning-rate factor from <span class="math-widehat">ΔH</span> and apply the thresholds to this unscaled quantity.</p>
         <div class="filter-comparison">
           <div><h3>One-sided filter</h3><p>Remove updates with <span class="inline-math"><span class="math-widehat">ΔH</span> &gt; τ⁺</span>.</p><p>Suppress large predicted entropy increases while retaining entropy-decreasing updates.</p></div>
@@ -128,8 +128,8 @@
       </section>
 
       <section id="existing-methods" class="chapter" aria-labelledby="methods-title">
-        <p class="chapter-label">REVISIT EXISTING METHODS</p>
-        <h2 id="methods-title">Different masks, a common entropy signal</h2>
+        <h2 id="methods-title">REVISIT EXISTING METHODS</h2>
+        <h3>Different masks, a common entropy signal</h3>
         <p>The same estimate helps interpret interventions that were designed around other token properties. The <a href="https://arxiv.org/abs/2506.01939">80/20 entropy rule</a> trains only on the highest-entropy 20% of tokens. On NuminaMath-LEAN with Qwen3-4B, it substantially reduces accumulated predicted entropy change, keeps entropy lower, and avoids the baseline’s complete reward collapse. With Gemma3-4B, the stabilizing effect is weaker: entropy growth is delayed, but reward still degrades later.</p>
         <figure>
           <a class="figure-link" href="assets/figures/high-entropy-tokens.svg" target="_blank" rel="noreferrer" aria-label="Open the high-entropy token selection comparison at full size">
@@ -148,14 +148,13 @@
       </section>
 
       <section id="discussion" class="chapter" aria-labelledby="discussion-title">
-        <p class="chapter-label">WHAT THIS VIEW GIVES US</p>
-        <h2 id="discussion-title">A practical signal on the trainer side.</h2>
+        <h2 id="discussion-title">WHAT THIS VIEW GIVES US</h2>
+        <h3>A practical signal on the trainer side</h3>
         <p>In the entropy-growth failures studied here, a local first-order signal tracks the observed dynamics, and directly filtering its positive tail improves stability. The gradient view gives a complementary way to act on what the resulting updates do to the trainer’s distribution.</p>
         <p>The evidence covers selected collapse-prone configurations, two model families in the main filtering experiments, and finite training horizons. The method introduces thresholds, and suppressing entropy growth too aggressively may affect exploration. Decreasing entropy can also lead to collapse, as shown by the <a href="../wapo_page/#regimes">negative-valley-only experiments in WAPO</a>. Addressing this low-entropy failure mode and developing methods that regulate both stability and exploration without additional selection hyperparameters remain open directions.</p>
       </section>
       <footer class="article-footer">
         <p>Based on <a href="assets/paper.pdf">Diagnosing and Stabilizing RLVR Training through Entropy Dynamics</a> by Prasanth YSS, Zhichen Ren, Guangwei Yu, and Satya Krishna Gorti, Layer 6 AI.</p>
-        <p>Related reading: <a href="../wapo_page/">the WAPO research note</a>, <a href="https://arxiv.org/abs/2512.21852">A Comedy of Estimators</a>, and <a href="https://brianbartoldson.wordpress.com/2026/05/04/cheaply-approximating-kl-against-an-ema-an-async-rl-hack/">Bartoldson’s EMA-reference analysis</a>. Related discussion: <a href="https://x.com/bartoldson/status/2119541651953897489">Bartoldson on X</a>.</p>
         <div><a href="assets/data/provenance.json">Figure sources</a><a href="https://github.com/layer6ai-labs/wapo">Repository</a><a href="#top">Back to top</a></div>
       </footer>
     </article>

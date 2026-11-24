@@ -14,7 +14,7 @@ The visual language follows the WAPO research page: green palette, serif heading
 
 ## Figures and sources
 
-`assets/data/` contains the exact CSV snapshots from `neurips_2026/overleaf/plots/`. `provenance.json` records their paths and SHA-256 hashes. All figures show the supplied coordinates without additional smoothing or resampling. The main threshold figure retains the manuscript's axis ranges and truncated trajectories.
+`assets/data/` contains the exact CSV snapshots from `neurips_2026/overleaf/plots/`. `provenance.json` records their paths and SHA-256 hashes. All figures show the supplied coordinates without additional smoothing or resampling. SVG lettering is embedded as vector paths so mathematical accents render without requiring local math fonts. The main threshold figure retains the manuscript's axis ranges and truncated trajectories.
 
 The five plot groups are:
 
@@ -41,4 +41,4 @@ MPLCONFIGDIR=/tmp/entropy-control-mpl python tools/build_assets.py \
 
 Claims concern the reported entropy-growth failures and plotted horizons. The prose distinguishes the local logit-space estimate from a full-network prediction, explains that the normal sampled-token importance ratio remains, and makes no measured runtime or memory claim.
 
-The requested X status could not be retrieved directly. It is retained as related discussion, without quoting it or attributing specific findings to it. Related reading includes the accessible primary paper *A Comedy of Estimators* and Bartoldson's own EMA-reference analysis. The KL cost discussion concerns additional reference-model forward passes and full-distribution comparisons.
+The requested X status could not be retrieved directly. The KL cost discussion concerns additional reference-model forward passes and full-distribution comparisons.

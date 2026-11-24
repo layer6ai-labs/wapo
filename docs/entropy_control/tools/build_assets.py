@@ -26,7 +26,9 @@ GROUPS = (
 )
 BLUE, ORANGE, RED, GREEN = "#0072B2", "#BD7A00", "#D55E00", "#008568"
 METRICS = ("reward", "entropy", "cumulative_first_order_entropy_change")
-TITLES = ("Reward", "Trainer entropy", r"Accumulated predicted $\widehat{\Delta H}$")
+TITLES = ("Reward", "Trainer entropy", r"Accumulated $\widehat{\Delta H}$")
+TITLE_SIZE = 18
+LEGEND_SIZE = 20
 
 
 def import_sources(source: Path) -> None:
@@ -64,7 +66,7 @@ def read(group: str, name: str) -> np.ndarray:
 
 
 def style(ax: plt.Axes, title: str, xmax: int) -> None:
-    ax.set_title(title, loc="left", pad=10, fontweight="normal")
+    ax.set_title(title, loc="left", pad=16, fontweight="normal", fontsize=TITLE_SIZE)
     ax.set_xlim(0, xmax)
     ax.grid(axis="both", color="#dce7e1", linewidth=0.55)
     ax.set_axisbelow(True)
@@ -78,7 +80,8 @@ def style(ax: plt.Axes, title: str, xmax: int) -> None:
 
 def save(fig: plt.Figure, name: str) -> None:
     path = FIGURES / f"{name}.svg"
-    fig.savefig(path, facecolor="white", bbox_inches="tight")
+    with plt.rc_context({"svg.fonttype": "path"}):
+        fig.savefig(path, facecolor="white", bbox_inches="tight")
     path.write_text(
         "\n".join(line.rstrip() for line in path.read_text().splitlines()) + "\n"
     )
@@ -125,16 +128,20 @@ def thresholds(mobile: bool) -> None:
         left, right = axes[row, col].get_position(), axes[row, col + 1].get_position()
         fig.text(
             (left.x0 + right.x1) / 2,
-            left.y1 + (0.035 if mobile else 0.075),
+            left.y1 + 0.65 / fig.get_figheight(),
             label,
             ha="center",
             va="bottom",
-            fontsize=12 if mobile else 11,
+            fontsize=TITLE_SIZE,
             linespacing=1.5,
         )
     legend(
         fig,
-        ("Baseline", "One-sided filter", "Two-sided filter"),
+        (
+            "Baseline",
+            r"$\widehat{\Delta H}<\tau^{+}$",
+            r"$\tau^{-}<\widehat{\Delta H}<\tau^{+}$",
+        ),
         (BLUE, ORANGE, RED),
         ("-", "-", "--"),
         mobile,
@@ -161,7 +168,7 @@ def legend(
         bbox_to_anchor=(0.5, -0.035),
         frameon=False,
         ncol=1 if mobile else (columns or len(labels)),
-        fontsize=16,
+        fontsize=LEGEND_SIZE,
     )
 
 
@@ -172,12 +179,12 @@ def dynamics(mobile: bool) -> None:
         ("gemma-math", "MATH-500", GREEN),
         ("gemma-numina", "NuminaMath-LEAN", "#A15B8A"),
     )
-    fig = plt.figure(figsize=(7, 19) if mobile else (14, 8.7))
+    fig = plt.figure(figsize=(7, 24) if mobile else (14, 10.2))
     grid = fig.add_gridspec(
         8 if mobile else 4,
         1 if mobile else 3,
         height_ratios=(1, 1, 1, 0.22) * 2 if mobile else (1, 0.22) * 2,
-        hspace=0.85 if mobile else 0.65,
+        hspace=1.15 if mobile else 0.8,
         wspace=0.35,
         left=0.09,
         right=0.98,
@@ -218,7 +225,7 @@ def dynamics(mobile: bool) -> None:
             loc="center",
             ncol=2,
             frameon=False,
-            fontsize=16,
+            fontsize=LEGEND_SIZE,
             columnspacing=2,
             handlelength=2.4,
         )
@@ -235,12 +242,12 @@ def methods(
 ) -> None:
     rows = len(configurations)
     fig, axes = (
-        plt.subplots(rows * 3, 1, figsize=(7, rows * 8.5), squeeze=False)
+        plt.subplots(rows * 3, 1, figsize=(7, rows * 11.5), squeeze=False)
         if mobile
-        else plt.subplots(rows, 3, figsize=(14, rows * 3.5), squeeze=False)
+        else plt.subplots(rows, 3, figsize=(14, rows * 4.5), squeeze=False)
     )
     top = 0.94 if mobile else 0.88
-    fig.subplots_adjust(hspace=0.7, wspace=0.36, top=top, bottom=0.09)
+    fig.subplots_adjust(hspace=1.2, wspace=0.36, top=top, bottom=0.09)
     for i, (prefix, label, xmax) in enumerate(configurations):
         for j, metric in enumerate(METRICS):
             ax = axes[i * 3 + j, 0] if mobile else axes[i, j]
@@ -249,7 +256,8 @@ def methods(
                 ax.plot(
                     series["gradient_step"], series[metric], color=color, linewidth=1.6
                 )
-            style(ax, f"{label}\n{TITLES[j]}", xmax)
+            model_label = label.replace(" · ", "\n")
+            style(ax, f"{model_label}\n{TITLES[j]}", xmax)
     legend(fig, labels, (BLUE, RED), ("-", "-"), mobile)
     save(fig, f"{name}-mobile" if mobile else name)
 
@@ -268,11 +276,11 @@ def multi_seed(seed: int, mobile: bool) -> None:
         )
     variants.append(("01-01", r"$-0.1<\widehat{\Delta H}<0.1$", RED, "--"))
     fig, axes = (
-        plt.subplots(3, 1, figsize=(7, 10))
+        plt.subplots(3, 1, figsize=(7, 13))
         if mobile
-        else plt.subplots(1, 3, figsize=(14, 4.5))
+        else plt.subplots(1, 3, figsize=(14, 5.2))
     )
-    fig.subplots_adjust(hspace=0.7, wspace=0.35, top=0.88, bottom=0.15)
+    fig.subplots_adjust(hspace=1.2, wspace=0.35, top=0.88, bottom=0.15)
     limits = ((0, 0.72), (0, 12), (-0.55, 0.1))
     ticks = ((0, 0.2, 0.4, 0.6), (0, 3, 6, 9, 12), (-0.5, -0.3, -0.1, 0.1))
     for j, (ax, metric) in enumerate(zip(axes, METRICS, strict=True)):
@@ -319,7 +327,6 @@ def main() -> None:
             "axes.labelcolor": "#52675c",
             "xtick.color": "#52675c",
             "ytick.color": "#52675c",
-            "svg.fonttype": "none",
             "svg.hashsalt": "entropy-control",
         }
     )
