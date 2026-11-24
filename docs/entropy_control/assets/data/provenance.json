@@ -1,0 +1,123 @@
+{
+  "paper": "Diagnosing and Stabilizing RLVR Training through Entropy Dynamics",
+  "source_root": "neurips_2026/overleaf",
+  "transform": "CSV coordinates as supplied; no additional smoothing or resampling",
+  "thresholds": {
+    "ott-qwen": 0.1,
+    "other_settings": 0.2,
+    "lower": -0.1
+  },
+  "learning_rate_omitted_for_filtering": true,
+  "files": [
+    {
+      "path": "entropy-filtering-reward-entropy/math-gemma-baseline.csv",
+      "source": "plots/entropy-filtering-reward-entropy/data/math-gemma-baseline.csv",
+      "sha256": "e51c16d50d83beba27a8be78b20f798f58736c631ad9c6e144b5e6925ae14f24"
+    },
+    {
+      "path": "entropy-filtering-reward-entropy/math-gemma-two-sided.csv",
+      "source": "plots/entropy-filtering-reward-entropy/data/math-gemma-two-sided.csv",
+      "sha256": "03a1ecd2d5986e9c2f972d0153eb888aeca08562aa56a0bde5e080ff385ef703"
+    },
+    {
+      "path": "entropy-filtering-reward-entropy/math-gemma-upper.csv",
+      "source": "plots/entropy-filtering-reward-entropy/data/math-gemma-upper.csv",
+      "sha256": "5c2204fd146eb71eaea2c81217ce132768602e1281dec3b1585e442b61389c5e"
+    },
+    {
+      "path": "entropy-filtering-reward-entropy/numina-gemma-baseline.csv",
+      "source": "plots/entropy-filtering-reward-entropy/data/numina-gemma-baseline.csv",
+      "sha256": "ad90a29a8c554944155a7ece790d107d738bdc04c553733f65c174ddd3e5417a"
+    },
+    {
+      "path": "entropy-filtering-reward-entropy/numina-gemma-two-sided.csv",
+      "source": "plots/entropy-filtering-reward-entropy/data/numina-gemma-two-sided.csv",
+      "sha256": "7117c95a726c3f1872ed4294230d81ca2ee7d57a53ed280f21c74480ff5237a8"
+    },
+    {
+      "path": "entropy-filtering-reward-entropy/numina-gemma-upper.csv",
+      "source": "plots/entropy-filtering-reward-entropy/data/numina-gemma-upper.csv",
+      "sha256": "470e2b4c8f93efb6016c5cc0f220a090911b94c78cd949fcfae3bd59957c193c"
+    },
+    {
+      "path": "entropy-filtering-reward-entropy/numina-qwen-baseline.csv",
+      "source": "plots/entropy-filtering-reward-entropy/data/numina-qwen-baseline.csv",
+      "sha256": "b865c133a108c13ddcd7959571ac7f0f25217d3285961a16a87aa7fc79f4418e"
+    },
+    {
+      "path": "entropy-filtering-reward-entropy/numina-qwen-two-sided.csv",
+      "source": "plots/entropy-filtering-reward-entropy/data/numina-qwen-two-sided.csv",
+      "sha256": "96511a670b7c33d49df23dd1a70c32cdf6c9318b34ed602756a98fe4d6b0d96a"
+    },
+    {
+      "path": "entropy-filtering-reward-entropy/numina-qwen-upper.csv",
+      "source": "plots/entropy-filtering-reward-entropy/data/numina-qwen-upper.csv",
+      "sha256": "011dadef6dfd634f25bf8b83342534601148af6bf44249b0b04d0d2dce36fd80"
+    },
+    {
+      "path": "entropy-filtering-reward-entropy/ott-qwen-baseline.csv",
+      "source": "plots/entropy-filtering-reward-entropy/data/ott-qwen-baseline.csv",
+      "sha256": "1866a1f2693a2a15a1dcee38f27f0e2803bf86ed284e74c2ae5c9c391f28b44e"
+    },
+    {
+      "path": "entropy-filtering-reward-entropy/ott-qwen-two-sided.csv",
+      "source": "plots/entropy-filtering-reward-entropy/data/ott-qwen-two-sided.csv",
+      "sha256": "d9a9934c9f1d4a819ca523ac3dae00b65fcfe3741fbf87134daa062779328af0"
+    },
+    {
+      "path": "entropy-filtering-reward-entropy/ott-qwen-upper.csv",
+      "source": "plots/entropy-filtering-reward-entropy/data/ott-qwen-upper.csv",
+      "sha256": "a469e3a9f34007f1261503c51fa9720d2d6c9efc9337213840d0557f4e62de11"
+    },
+    {
+      "path": "entropy-first-order-collapse/gemma-math.csv",
+      "source": "plots/entropy-first-order-collapse/data/gemma-math.csv",
+      "sha256": "56f4fd359a5f52f486d7c89d86f86e02785a5cd531fe69d0c54f76adf2c474d4"
+    },
+    {
+      "path": "entropy-first-order-collapse/gemma-numina.csv",
+      "source": "plots/entropy-first-order-collapse/data/gemma-numina.csv",
+      "sha256": "091c5548ecc7394c2217a779f058ef87a624542516870a88c40e1492369f11b4"
+    },
+    {
+      "path": "entropy-first-order-collapse/qwen-numina.csv",
+      "source": "plots/entropy-first-order-collapse/data/qwen-numina.csv",
+      "sha256": "0be415a8d1f63d96b1052d990535f640ec7a4c6881884f51bc2cb12cbc938c7d"
+    },
+    {
+      "path": "entropy-first-order-collapse/qwen-ott.csv",
+      "source": "plots/entropy-first-order-collapse/data/qwen-ott.csv",
+      "sha256": "83518f95439353b7efd63a2247ed4d5095274d3bd2a38430a79bc8c9270c3b90"
+    },
+    {
+      "path": "entropy-80-20-rule/numina-gemma-80-20.csv",
+      "source": "plots/entropy-80-20-rule/data/numina-gemma-80-20.csv",
+      "sha256": "5744f6ed346196e6c45fded6057757129ec4434e7d39085be3700b69b3e0a008"
+    },
+    {
+      "path": "entropy-80-20-rule/numina-gemma-baseline.csv",
+      "source": "plots/entropy-80-20-rule/data/numina-gemma-baseline.csv",
+      "sha256": "9897a1614b1bb5d5424ad7971ac2a8fc3bbc8bba11c86ee4f665c86874ea8ece"
+    },
+    {
+      "path": "entropy-80-20-rule/numina-qwen-80-20.csv",
+      "source": "plots/entropy-80-20-rule/data/numina-qwen-80-20.csv",
+      "sha256": "e9c711321a37c1ed336eb7dc1a0a33b4a66fbd2a82ad2dd53c4556df189ceb70"
+    },
+    {
+      "path": "entropy-80-20-rule/numina-qwen-baseline.csv",
+      "source": "plots/entropy-80-20-rule/data/numina-qwen-baseline.csv",
+      "sha256": "a032f5ed96e623807262d803b3cb293162d10909db7e56647539285c0e60ccd0"
+    },
+    {
+      "path": "peak-valley-entropy/peak.csv",
+      "source": "plots/peak-valley-entropy/data/peak.csv",
+      "sha256": "d16a37a43b87dedc5f5068f10924bbd088b28559eb527c1eff272ce86f28e065"
+    },
+    {
+      "path": "peak-valley-entropy/valley.csv",
+      "source": "plots/peak-valley-entropy/data/valley.csv",
+      "sha256": "0196319fc94e5ecf0d37cf21a4dea02d6c359b75acea6674c72e2d998b4a6634"
+    }
+  ]
+}
