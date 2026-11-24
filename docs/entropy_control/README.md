@@ -10,18 +10,19 @@ python3 -m http.server 8000 --directory docs
 
 Read `http://localhost:8000/entropy_control/`. When this repository's `docs` folder is published through GitHub Pages, the corresponding path is `/wapo/entropy_control/`. This change does not modify publication settings or deploy the page.
 
-The visual language follows the WAPO research page: green palette, serif headings, reading sidebar, expandable evidence, and a dark-mode switch. Scientific plots have separate narrow-screen layouts. All paper links open the supplied `neurips_2026/rlvr_entropy_control.pdf`, copied to `assets/paper.pdf`.
+The visual language follows the WAPO research page: green palette, serif headings, reading sidebar, expandable evidence, and a dark-mode switch. Scientific plots have separate narrow-screen layouts and larger legends below the plots. Threshold values appear in the main figure's caption rather than above individual panels. All paper links open the supplied `neurips_2026/rlvr_entropy_control.pdf`, copied to `assets/paper.pdf`.
 
 ## Figures and sources
 
 `assets/data/` contains the exact CSV snapshots from `neurips_2026/overleaf/plots/`. `provenance.json` records their paths and SHA-256 hashes. All figures show the supplied coordinates without additional smoothing or resampling. The main threshold figure retains the manuscript's axis ranges and truncated trajectories.
 
-The four plot groups are:
+The five plot groups are:
 
 - `entropy-filtering-reward-entropy`: the four main one-sided/two-sided comparisons.
 - `entropy-first-order-collapse`: baseline reward, measured entropy, and accumulated first-order estimates.
 - `entropy-80-20-rule`: highest-entropy 20% selection versus baseline.
 - `peak-valley-entropy`: peak-only versus valley-only training.
+- `ott-qwen-threshold-seeds`: the paper's Qwen3-4B / OTT-QA threshold experiments across LoRA initialization seeds 42, 43, and 44, shown in an expandable panel. Seed 42 includes five configurations; seeds 43 and 44 show the three configurations used in the paper's multi-seed figure. Accumulated entropy change uses the unscaled CSV column, equivalent to the paper's axis with its ×10⁻³ multiplier.
 
 Rebuild the SVGs with a Python environment containing Matplotlib and NumPy:
 
@@ -40,4 +41,4 @@ MPLCONFIGDIR=/tmp/entropy-control-mpl python tools/build_assets.py \
 
 Claims concern the reported entropy-growth failures and plotted horizons. The prose distinguishes the local logit-space estimate from a full-network prediction, explains that the normal sampled-token importance ratio remains, and makes no measured runtime or memory claim.
 
-The requested X status could not be retrieved directly. It is retained as related discussion, without quoting it or attributing specific findings to it. The KL paragraph instead cites the accessible primary paper *A Comedy of Estimators* and Bartoldson's own EMA-reference analysis. Full-distribution KL and sampled log-ratio approximations have different storage requirements; the post preserves that distinction.
+The requested X status could not be retrieved directly. It is retained as related discussion, without quoting it or attributing specific findings to it. Related reading includes the accessible primary paper *A Comedy of Estimators* and Bartoldson's own EMA-reference analysis. The KL cost discussion concerns additional reference-model forward passes and full-distribution comparisons.

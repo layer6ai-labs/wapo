@@ -118,6 +118,71 @@
       "path": "peak-valley-entropy/valley.csv",
       "source": "plots/peak-valley-entropy/data/valley.csv",
       "sha256": "0196319fc94e5ecf0d37cf21a4dea02d6c359b75acea6674c72e2d998b4a6634"
+    },
+    {
+      "path": "ott-qwen-threshold-seeds/seed42-01-01.csv",
+      "source": "plots/ott-qwen-threshold-seeds/data/seed42-01-01.csv",
+      "sha256": "6349878d1f3732e5889be1fe42841b709f626e6b4e9584f23eb6d47b48b11b91"
+    },
+    {
+      "path": "ott-qwen-threshold-seeds/seed42-01.csv",
+      "source": "plots/ott-qwen-threshold-seeds/data/seed42-01.csv",
+      "sha256": "1bf3c13f2b778edd04aec9aede86a0888cd225576956a88855d3d019808c5269"
+    },
+    {
+      "path": "ott-qwen-threshold-seeds/seed42-02-01.csv",
+      "source": "plots/ott-qwen-threshold-seeds/data/seed42-02-01.csv",
+      "sha256": "65e6f8cc6687a30276737f4ee18918ee4cde559f572aa154061bbafd5cfefa8c"
+    },
+    {
+      "path": "ott-qwen-threshold-seeds/seed42-02.csv",
+      "source": "plots/ott-qwen-threshold-seeds/data/seed42-02.csv",
+      "sha256": "0975df53e21358f459ec8f773d1bcdcd2313bf568f408f7390b2ef37fdf68c0f"
+    },
+    {
+      "path": "ott-qwen-threshold-seeds/seed42-baseline.csv",
+      "source": "plots/ott-qwen-threshold-seeds/data/seed42-baseline.csv",
+      "sha256": "8da3f804ca48dfd62d63abec2c60f40c41e02971aecca6311ccc89a4719485b2"
+    },
+    {
+      "path": "ott-qwen-threshold-seeds/seed43-01-01.csv",
+      "source": "plots/ott-qwen-threshold-seeds/data/seed43-01-01.csv",
+      "sha256": "c3f5d68a8b2e1c4981c79737b130e90aa869f7ab4ff541c00498c9de977e670b"
+    },
+    {
+      "path": "ott-qwen-threshold-seeds/seed43-01.csv",
+      "source": "plots/ott-qwen-threshold-seeds/data/seed43-01.csv",
+      "sha256": "5dfd6d2689af8f5b0fcf080b69c0665e29dc7b2bdf023e4fdd5c1524af94f006"
+    },
+    {
+      "path": "ott-qwen-threshold-seeds/seed43-02-01.csv",
+      "source": "plots/ott-qwen-threshold-seeds/data/seed43-02-01.csv",
+      "sha256": "86c1afbf76b9d8b95a1d3c4893b75955f2732690818f19c70e4c3fcbfba5df96"
+    },
+    {
+      "path": "ott-qwen-threshold-seeds/seed43-baseline.csv",
+      "source": "plots/ott-qwen-threshold-seeds/data/seed43-baseline.csv",
+      "sha256": "3bf398a208a86367ee65dd72e2f4051503560284e4a3c7e430f6536f1a89d690"
+    },
+    {
+      "path": "ott-qwen-threshold-seeds/seed44-01-01.csv",
+      "source": "plots/ott-qwen-threshold-seeds/data/seed44-01-01.csv",
+      "sha256": "53baebff09976cdde898bf8cbae621acaf163dc5af5ddac7c01ecdd3c17919a4"
+    },
+    {
+      "path": "ott-qwen-threshold-seeds/seed44-01.csv",
+      "source": "plots/ott-qwen-threshold-seeds/data/seed44-01.csv",
+      "sha256": "a13634578e1060bb24ccb4a5b56926fe2f019f0201c62f8bc2c6bff118720c1f"
+    },
+    {
+      "path": "ott-qwen-threshold-seeds/seed44-02-01.csv",
+      "source": "plots/ott-qwen-threshold-seeds/data/seed44-02-01.csv",
+      "sha256": "cc37f714ecfee16a1ce10db23bb011e2ff62752e1e12457f969f4aa095bc7b3d"
+    },
+    {
+      "path": "ott-qwen-threshold-seeds/seed44-baseline.csv",
+      "source": "plots/ott-qwen-threshold-seeds/data/seed44-baseline.csv",
+      "sha256": "c271e14738a41ec721c9527f7db8b069491b73e60330158a4cc026228ffa7677"
     }
   ]
 }
